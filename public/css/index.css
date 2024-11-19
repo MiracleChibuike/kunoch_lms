@@ -1,0 +1,458 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+/* HEX-CODES */
+:root {
+  --primary: #d1edf1;
+  --secondary: #1aa3ba;
+  --black-primary: #2b2b2b;
+  --primary-white: #ffffff;
+  --clr-danger: #ff2917;
+}
+
+/* Styling for Parent Hero */
+.parent_Hero {
+  background: var(--primary);
+}
+.nav_Container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 35px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  background: var(--primary);
+}
+.nav_shadow{
+    box-shadow: 0 0 5px var(--black-primary);
+    transition: .4s ease-in-out;
+}
+.nav_menu {
+  display: none;
+}
+#menu_hide {
+  display: none;
+}
+.nav_ContentsAll {
+  display: flex;
+}
+.nav_links ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav_links ul li {
+  padding: 0 35px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.yes{
+    color: var(--secondary);
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+    /* width: 100%; */
+
+}
+/* .nav_ContentsAll .nav_Links.active {
+    color: var(--secondary);
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+    border: 2px solid var(--secondary);
+} */
+.nav_links ul li:hover {
+  color: var(--secondary);
+  font-weight: bold;
+  transition: color 0.4s ease-in-out;
+}
+
+.nav_links ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary);
+  transition: width 0.4s ease-in-out;
+}
+
+.nav_links ul li:hover::after {
+  width: 100%; /* Expands to match the text width */
+}
+#log_in {
+  background: var(--secondary);
+  color: var(--primary-white);
+  border: none;
+  border-radius: 4px;
+  padding: 5px 25px;
+}
+#log_in:hover {
+  transform: scale(1.1);
+  transition: 0.4s ease;
+}
+
+
+/* HOME SEction */
+#hero_Container {
+  padding: 20px 35px;
+    position: relative;
+    top: 50px;
+    height: 100vh;
+}
+.hero_content {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 0 0;
+}
+.hero_Texts {
+  margin: 105px 0 0 0;
+  /* line-height: 2; */
+}
+.insight {
+  font-size: 1.2rem;
+}
+.hero_Texts h3 {
+  font-size: 2rem;
+}
+#hero_Image {
+  /* position: relative;
+bottom: 30px; */
+  max-height: 575px;
+}
+#get_started_btn {
+  background: var(--secondary);
+  color: var(--primary-white);
+  border: none;
+  border-radius: 3px;
+  padding: 5px 30px;
+}
+#get_started_btn:hover {
+  transform: scale(1.1);
+  transition: 0.4s ease;
+}
+#locate_courses{
+  background: var(--primary-white);
+  color: var(--black-primary);
+  padding: 5px 30px;
+  border: 1px solid var(--black-primary);
+  border-radius: 3px;
+  margin: 0 20px;
+}
+#locate_courses:hover{
+    transform: translateX(5px);
+  transition: 0.3s ease;
+  border: 1px solid var(--secondary);
+}
+
+/* Courses Section */
+#Courses{
+    margin: 50px 0 0 0;
+    padding: 20px 35px;
+}
+.courses_heading{
+    text-align: center;
+    font-size: 2.1rem;
+font-weight: 700;
+line-height: 70.28px;
+}
+.courses_Display{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    margin: 15px 0 0 0;
+}
+.course_desc, .course_desc2, .course_desc3{
+    background: var(--primary);
+    padding: 20px 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+     transition: transform 0.9s ease;
+}
+.course_desc:hover, .course_desc2:hover, .course_desc3:hover{
+    background: var(--secondary);
+    box-shadow: 10px 10px  25px var(--black-primary);
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: .3s;
+    color: var(--primary-white);
+}
+.course_desc .course_title, .course_desc2 .course_title, .course_desc3 .course_title{
+    text-align: center;
+}
+
+#web_Dev_Img, #UI_course_Img{
+    width: 478px;
+}
+.navigate_right{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+.navigate_right img{
+    margin: 10px 15px;
+}
+#arrow_left, #arrow_right{
+    max-width: 43.28px;
+
+}
+
+/* Courses Outlines */
+#Courses_Outlines{
+    padding: 20px 35px;
+    background: var(--primary);
+}
+
+.course_outlines_Container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+.course_outlines_Container div img{
+    max-width: 102px;
+    margin: 15px 5px;
+}
+#teacher_img{
+    max-width: 145px;
+}
+#clock_img{
+    max-width: 130px;
+}
+.mobile_View, .teachers_view, .clock{
+    text-align: center;
+}
+.mobile_texts > .mobile_texts_title, .teachers_texts > .teachers_texts_title, .clock_Texts > .clock_Texts_title{
+    margin: 10px 0 0 0;
+    font-size: 1.2rem;
+}
+/* LMS Contents Div */
+#lms{
+    margin: 35px 0;
+    padding: 20px 35px;
+}
+.lms_container{
+    display: flex;
+}
+/* .img_world_class{
+    max-height: 380px;
+    max-width: 571px;
+} */
+.lms_Texts{
+    margin-left: 45px;
+}
+.world_class_head{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 70px;
+}
+.world_class_info_texts{
+    margin: 35px 0;
+    font-weight: 600;
+    line-height: 32px;
+}
+.world_class_more{
+    display: flex;
+    justify-content: space-between;
+    margin: 55px 0 0 0;
+}
+
+/* Our Vision */
+#Our_Vision{
+    padding: 20px 35px;
+    background: var(--secondary);
+    color: var(--primary-white);
+}
+.vision_head{
+    text-align: center;
+font-size: 2.1rem;
+font-weight: 700;
+line-height: 70.28px;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+}
+.vision_Text{
+    line-height: 40px;
+}
+
+/* Team Section */
+#Teams{
+    padding: 20px 35px;
+    margin: 35px 0;
+}
+.team_Container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+}
+.team_Container > div > img{
+    /* max-width: 100%; */
+    width: 100%;
+}
+.team img, .team2 img, .team3 img{
+    max-height: 384px;
+}
+.team4 img{
+    max-height: 385px;
+}
+.team_contents{
+    border: 1px solid var(--secondary);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 10px 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.team_contents:hover{
+    cursor: pointer;
+    background: var(--secondary);
+    color: var(--primary-white);
+    transition: .4s ease;
+    box-shadow: 0 0 2px var(--secondary);
+}
+.team_Title{
+       text-align: center;
+font-size: 2.1rem;
+font-weight: 700;
+line-height: 70.28px;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+}
+
+/* Testimonials */
+#Testimony{
+  padding: 20px 35px;
+}
+.testimony_head{
+        text-align: center;
+font-size: 2.1rem;
+font-weight: 700;
+line-height: 70.28px;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+}
+.testimony_container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 15px;
+}
+.testimony_img img{
+  width: 213.47px;
+height: 223.96px;
+/* top: 45.25px;
+left: 793.13px; */
+border: 5px solid var(--secondary);
+opacity: 0px;
+}
+.testimony_main, .testimony_2{
+  display: flex;
+  background: var(--primary);
+  padding: 20px;
+}
+.testimony_comment{
+  margin: 0 55px;
+}
+.quote_img, .star_img{
+  position: relative;
+  left: -30px;
+  max-width: 40px;
+}
+.star_img{
+  max-width: 80px;
+}
+.facebook_icon, .whatsapp{
+  position: relative;
+  bottom: 10px;
+}
+.whatsapp{
+  margin: 0 10px;
+}
+/* Media Querry for Mobiles */
+@media screen and (min-width: 0) and (max-width: 750px) {
+  .nav_ContentsAll {
+    display: none;
+  }
+  .nav_menu {
+    display: block;
+  }
+
+  /* Home Section */
+  .hero_content{
+    display: block;
+     margin: 10px 0 0 0;
+  }
+  #get_started_btn {
+    padding: 5px 15px;
+}
+#get_started_btn:hover {
+  transform: scale(1.1);
+  transition: 0.4s ease;
+}
+#locate_courses{
+  padding: 5px 15px;
+}
+  .hero_Texts{
+    text-align: center;
+    margin: 15px 0;
+  }
+  #hero_Image{
+    width: 100%;
+  }
+  /* Courses Section */
+  .courses_Display{
+    display: block;
+    margin: 15px 0 0 0;
+}
+.Web_content, .Product_management, .UI_Course{
+    margin: 15px 0;
+}
+#web_Dev_Img, #UI_course_Img, #product_m{
+    width: 100%;
+}
+
+/* Courses Outlines */
+.course_outlines_Container{
+    display: block;
+}
+
+/* LMS Contents DIV */
+.lms_container{
+    display: block;
+}
+.img_world_class{
+    width: 100%;
+}
+.world_class_head{
+    font-size: 2.3rem;
+    line-height: 50px;
+}
+.world_class_more{
+    display: block;
+}
+
+/* Team Container */
+.team_Container{
+    display: block;
+}
+.team, .team2, .team3, .team4{
+    margin: 25px 0;
+}
+/* Testimony */
+.testimony_container{
+  display: block;
+}
+.testimony_img{
+  text-align: center;
+}
+.testimony_main, .testimony_2{
+  display: block;
+  margin: 10px 0;
+}
+}
+
+/* Media Querry for iPads */

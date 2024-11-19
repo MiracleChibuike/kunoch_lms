@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Google Fonts API  -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Cabin+Condensed&family=Dancing+Script&family=Jost&family=Kalam&family=Kanit&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+Display:wght@600&family=Odibee+Sans&family=PT+Sans+Narrow&family=Sansita+Swashed:wght@300..900&family=Signika+Negative:wght@300..700&family=Slabo+27px&family=Syne:wght@400..800&family=Ubuntu:wght@500&family=Yesteryear&display=swap');
+    </style>
+    <!-- Default CSS Link -->
+     <link rel="stylesheet" href="/public/css/index.css">
+</head>
+<body>
+    
+    <!-- Main Container -->
+     <div class="parentContainer">
+        <div class="parent_Hero">
+            <!-- Nav Container -->
+            <div class="nav_Container">
+                <div class="log">
+                    <h2>Kunoch</h2>
+                </div>
+                <div class="nav_menu">
+                    <i class="fa-solid fa-bars" id="menu_show"></i>
+                    <i class="fa-solid fa-xmark" id="menu_hide"></i>
+                </div>
+                <div class="nav_ContentsAll">
+                    <div class="nav_links">
+                        <ul>
+                            <li class="navs_El" id="Home_El">Home</li>
+                            <li class="navs_El">Services</li>
+                            <li class="navs_El">About Us</li>
+                            <li class="navs_El">Contact Us</li>
+                        </ul>
+                    </div>
+                    <div class="logIns">
+                       <button id="log_in">Log In</button>
+                    </div>
+                </div>
+            </div>
+            <!-- home Section -->
+            <section id="hero_Container">
+                <div class="hero_content">
+                    <div class="hero_Texts">
+                        <p class="insight">Gain new Skills,</p>
+                        <h3><strong>Change your life</strong></h3>
+                        <p>
+                            At Kunoch, we are dedicated to changing the lives of our students by  teaching them high value soft
+                            skills that
+                            translates into millions.
+                        </p>
+                       <div class="course_buttons">
+                        <button id="get_started_btn">Get Started</button>
+                        <button id="locate_courses">Find Courses</button>
+                       </div>
+                    </div>
+                    <div class="hero_Img">
+                        <img src="/public/images/home_images/hero_image.png" id="hero_Image" alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Courses Section -->
+        <section id="Courses">
+            <h2 class="courses_heading">Available Courses</h2>
+            <div class="courses_Display">
+                <div class="Web_Course">
+                    <div class="Web_content">
+                        <img src="/public/images/courses_images/web_dev_course.png" id="web_Dev_Img" alt="">
+                        <div class="course_desc">
+                            <p class="course_title"><strong>
+                                FrontEnd Development
+                            </strong></p>
+                            <p>
+                                Master essential skills in HTML, CSS, and  JavaScript including React to bring your ideas  to life and create visually stunning,
+                                user-friendly websites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Product_management">
+                    <div class="product_m_content">
+                        <img src="/public/images/courses_images/new_product_img.jpeg" width="478px" id="product_m" alt="">
+                        <div class="course_desc2">
+                            <p class="course_title"><strong>Product Management</strong></p>
+                            <p>
+                                Master the essentials of product management with this  comprehensive course designed to turn your
+                                ideas into  successful
+                                products.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="UI_Course">
+                    <div class="UI_content">
+                        <img src="/public/images/courses_images/Ux_course.png" id="UI_course_Img" alt="">
+                       <div class="course_desc3">
+                        <p class="course_title"><strong>UI/UX Design</strong></p>
+                        <p>
+                            Unlock the art and science of user-centered  design with this UI/UX course, crafted to elevate  your digital
+                            product
+                            skills.
+                        </p>
+                       </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="navigate_right">
+                <img src="/public/images/navigation_Icons/arrow_left.png" id="arrow_left" alt="">
+                <img src="/public/images/navigation_Icons/arrow_right.png" id="arrow_right" alt="">
+            </div>
+        </section>
+
+        <!-- Courses Outlines -->
+         <section id="Courses_Outlines">
+            <div class="course_outlines_Container">
+                <div class="mobile_View">
+                    <div class="mobile_contents">
+                        <img src="/public/images/navigation_Icons/mobile_view.png" id="mobile_img" alt="">
+                        <div class="mobile_texts">
+                            <p class="mobile_texts_title"><strong>Learn Anywhere</strong></p>
+                            <p class="info_text">
+                                Learn at home or on the go <br> using your mobile device or <br> PC.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="teachers_view">
+                    <div class="teachers_contents">
+                        <img src="/public/images/navigation_Icons/teacher_view.png" id="teacher_img" alt="">
+                        <div class="teachers_texts">
+                            <p class="teachers_texts_title"><strong>Expert Instructors</strong></p>
+                            <p>
+                                Learn from the absolute <br> best in the business.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clock">
+                    <div class="clock_contents">
+                        <img src="/public/images/navigation_Icons/clock.png" id="clock_img" alt="">
+                        <div class="clock_Texts">
+                            <p class="clock_Texts_title"><strong>24/7 Support</strong></p>
+                            <p>
+                                Help around the clock, <br> whenever you need it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- LMS Contents DIV -->
+          <section id="lms">
+            <div class="lms_container">
+                <div class="lms_image">
+                    <img src="/public/images/courses_images/world_class.png" class="img_world_class" alt="">
+                </div>
+                <div class="lms_Texts">
+                    <img src="/public/images/courses_images/world_class_indicator.png" id="indicator_long" alt="">
+                    <img src="/public/images/courses_images/indicator_dot.png" id="indicator_dot" alt="">
+                    <img src="/public/images/courses_images/world_class_indicator.png" id="indicator_long" alt="">
+                    <img src="/public/images/courses_images/indicator_dot.png" id="indicator_dot" alt="">
+                    <p>KunochDigi Learning Management System</p>
+                    <h2 class="world_class_head">World Class Education At Your Convenience</h2>
+                    <p class="world_class_info_texts">
+                        Introducing our advanced Learning Management System, designed  specifically for tech institutes! Empower students and
+                        instructors with a  personalized dashboard, real-time analytics, and a course catalog that’s  easy to navigate. Enhance
+                        learning through auto-graded coding  assignments, live virtual classrooms, and dedicated collaboration tools.  Access
+                        hands-on virtual labs, a rich resource library, and receive instant  updates and feedback. Boost student success with
+                        completion certificates, portfolio-building features, and a job board to connect with top tech  companies. Our LMS
+                        transforms tech education, making learning  streamlined, practical, and career-focused!
+                    </p>
+                    <div class="world_class_more">
+                        <div class="more">
+                            <p><a href="#" target="_blank" rel="noopener noreferrer">Learn More</a></p>
+                        </div>
+                        <div class="more_2">
+                            <img src="/public/images/courses_images/world_class_indicator.png" id="indicator_long alt="">
+                            <img src="/public/images/courses_images/indicator_dot.png" id="indicator_dot" alt="">
+                            <img src="/public/images/courses_images/world_class_indicator.png" id="indicator_long alt="">
+                            <img src="/public/images/courses_images/indicator_dot.png" id="indicator_dot" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+          <!-- Vision Page -->
+           <section id="Our_Vision">
+            <h2 class="vision_head">Our Vision</h2>
+            <div class="vision_Text">
+                <p>
+                    At KunochDigi, we aim at empowering the next generation of innovators through hands-on, inclusive, and cutting-edge
+                    technology education. We inspire curiosity, foster creativity, and build essential skills to prepare students for
+                    meaningful impact in a rapidly evolving digital world.
+                </p>
+            </div>
+           </section>
+
+           <!-- Team Section -->
+            <section id="Teams">
+                <h2 class="team_Title">
+                    Meet Our Team
+                </h2>
+                <div class="team_Container">
+                    <!-- First Team -->
+                    <div class="team">
+                        <img src="/public/images/team_Images/team_1.jpeg" alt="">
+                        <div class="team_contents">
+                           <p><strong>Mr. Ifeanyi</strong></p>
+                           <p>Operation Manager</p>
+                        </div>
+                    </div>
+                    <!-- Second Team -->
+                    <div class="team2">
+                        <img src="/public/images/team_Images/team_2.jpeg" alt="">
+                        <div class="team_contents">
+                            <p><strong>Mrs. Onyekachi</strong></p>
+                            <p>Administration Officer</p>
+                        </div>
+                    </div>
+                    <!-- Third team -->
+                    <div class="team3">
+                        <img src="/public/images/team_Images/team_1.jpeg" alt="">
+                        <div class="team_contents">
+                            <p><strong>Mr. Miracle</strong></p>
+                            <p>Web Dev. Instructor</p>
+                        </div>
+                    </div>
+                    <!-- Fourth Team -->
+                    <div class="team4">
+                        <img src="/public/images/team_Images/team_3.jpeg" alt="">
+                        <div class="team_contents">
+                            <p><strong>Mrs. Vera</strong></p>
+                            <p>UI/UX Instructor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigate_right">
+                    <img src="/public/images/navigation_Icons/arrow_left.png" id="arrow_left" alt="">
+                    <img src="/public/images/navigation_Icons/arrow_right.png" id="arrow_right" alt="">
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+             <section id="Testimony">
+                <h2 class="testimony_head">Testimonials</h2>
+                <div class="testimony_container">
+                    <div class="testimony_main">
+                        <div class="testimony_img">
+                            <img src="/public/images/testimonials/testimony_1.jpeg" alt="">
+                        </div>
+                        <div class="testimony_comment">
+                            <img src="/public/images/navigation_Icons/quote.png" class="quote_img"  alt="">
+                            <img src="/public/images/navigation_Icons/Stars.png" class="star_img" alt="">
+
+                            <p class="comments">
+                                As a student here, I've had an amazing  experience! I feel confident and excited about <br> my future in tech, thanks to the
+                                skills and  support I’ve gained here
+                            </p>
+                            <aside><strong>Ife Chinaza</strong>
+                            <p>Web Developer - FrontEnd</p>
+                            <img src="/public/images/navigation_Icons/ic_outline-facebook.png" class="facebook_icon" alt="">
+                            <img src="/public/images/navigation_Icons/whatsapp.png" class="whatsapp" alt="">
+                            </aside>
+                        </div>
+                    </div>
+                    <div class="testimony_2">
+                            <div class="testimony_img">
+                                <img src="/public/images/testimonials/testimony_2.jpeg" alt="">
+                            </div>
+                            <div class="testimony_comment">
+                                <img src="/public/images/navigation_Icons/quote.png" class="quote_img" alt="">
+                                <img src="/public/images/navigation_Icons/Stars.png" class="star_img" alt="">
+                            
+                                <p class="comments">
+                                    As a student here, I've had an amazing experience! I feel confident and excited about my future in tech, thanks
+                                    to the
+                                    skills and support I’ve gained here
+                                </p>
+                                <aside><strong>Ife Chinaza</strong>
+                                <p>UI/UX Designer</p>
+                                <img src="/public/images/navigation_Icons/ic_outline-facebook.png" class="facebook_icon" alt="">
+                                <img src="/public/images/navigation_Icons/whatsapp.png" class="whatsapp" alt="">
+                                </aside>
+                            </div>
+                    </div>
+                </div>
+             </section>
+     </div>
+
+
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+        <!-- FA CDN -->
+        <script src="https://kit.fontawesome.com/9b5c4c6b23.js" crossorigin="anonymous"></script>
+        <script src="/public/js/index.js"></script>
+</body>
+</html>
