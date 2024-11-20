@@ -13,7 +13,31 @@
   --primary-white: #ffffff;
   --clr-danger: #ff2917;
 }
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: var(--primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--black-primary);
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--secondary);
+    transition: .4s;
+}
+/* Change the text selection background color */
+::selection {
+  background: var(--secondary); /* Custom background color */
+  color: var(--primary-white); /* Custom text color */
+}
 
+/* For Firefox */
+::-moz-selection {
+  background: var(--secondary); /* Custom background color */
+  color: var(--primary-white); /* Custom text color */
+}
 /* Styling for Parent Hero */
 .parent_Hero {
   background: var(--primary);
@@ -124,6 +148,13 @@
   /* position: relative;
 bottom: 30px; */
   max-height: 575px;
+   transition: transform 0.9s ease, background-color 0.9s ease;
+}
+#hero_Image:hover{
+    transform: scale(1.1);
+            filter: brightness(80%);
+            transition: .9s;
+            cursor: pointer;
 }
 #get_started_btn {
   background: var(--secondary);
@@ -186,8 +217,8 @@ line-height: 70.28px;
     text-align: center;
 }
 
-#web_Dev_Img, #UI_course_Img{
-    width: 478px;
+#web_Dev_Img, #UI_course_Img, #product_m{
+    width: 100%;
 }
 .navigate_right{
     display: flex;
@@ -238,10 +269,16 @@ line-height: 70.28px;
 .lms_container{
     display: flex;
 }
-/* .img_world_class{
-    max-height: 380px;
-    max-width: 571px;
-} */
+.img_world_class{
+   transition: transform 0.9s ease, background-color 0.9s ease;
+}
+.img_world_class:hover{
+   /* transform: scale(1.1); */
+   transform: rotate(8deg);
+            filter: brightness(80%);
+            transition: .9s;
+            cursor: pointer;
+}
 .lms_Texts{
     margin-left: 45px;
 }
@@ -348,6 +385,13 @@ height: 223.96px;
 left: 793.13px; */
 border: 5px solid var(--secondary);
 opacity: 0px;
+transition: transform 0.9s ease, background-color 0.9s ease;
+}
+.testimony_img img:hover{
+    transform: scale(1.1);
+            filter: brightness(80%);
+            transition: .9s;
+            cursor: pointer;
 }
 .testimony_main, .testimony_2{
   display: flex;
@@ -361,6 +405,18 @@ opacity: 0px;
   position: relative;
   left: -30px;
   max-width: 40px;
+  transition: transform 0.9s ease, background-color 0.9s ease;
+  animation: bounce 3s linear infinite;
+}
+@keyframes bounce {
+  0%{
+    transform: translateY(0);
+    scale: 1.1;
+  }
+  50%, 100%{
+    transform: translateY(-5px);
+    scale: 1.1;
+  }
 }
 .star_img{
   max-width: 80px;
@@ -453,6 +509,59 @@ opacity: 0px;
   display: block;
   margin: 10px 0;
 }
+.testimony_comment{
+  position: relative;
+  top: 15px;
+}
 }
 
 /* Media Querry for iPads */
+
+@media screen and (min-width: 760px) and (max-width: 992px) {
+  .hero_content{
+    display: block;
+    text-align: center;
+  }
+  .hero_Texts{
+    margin: 45px 0;
+  }
+  .lms_container{
+    display: block;
+  }
+  .img_world_class{
+    width: 100%;
+  }
+  .testimony_container{
+    display: block;
+  }
+  .testimony_main, .testimony_2{
+    margin: 20px 0;
+  }
+}
+
+@media screen and (min-width: 995px) and (max-width: 1024px) { 
+  .hero_content{
+    display: flex;
+    text-align: center;
+  }
+  #hero_Image{
+    max-height: 400px;
+    margin: 0 10px;
+  }
+  .lms_container{
+    display: block;
+    text-align: center;
+  }
+   .img_world_class{
+    width: 80%;
+  }
+  .testimony_container{
+    display: block;
+  }
+   .testimony_main, .testimony_2{
+    margin: 20px 0;
+  }
+ }
+
+
+/* 768 1024 */
