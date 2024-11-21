@@ -1,52 +1,48 @@
-
 // Prevent Image dragging
 
-    document.querySelectorAll("img").forEach((img) => {
-      img.addEventListener("mousedown", function (event) {
-        event.preventDefault();
-      });
-      img.addEventListener("contextmenu", function (event) {
-        event.preventDefault();
-      });
-    });
+document.querySelectorAll("img").forEach((img) => {
+  img.addEventListener("mousedown", function (event) {
+    event.preventDefault();
+  });
+  img.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+  });
+});
 
-    // Add a box_shadow to the nav_container when a user scrolls
-    let nav_Container = document.querySelector(".nav_Container");
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 0) {
-            nav_Container.classList.add("nav_shadow");
-        }else{
-            nav_Container.classList.remove("nav_shadow");
-        }
-    });
+// Add a box_shadow to the nav_container when a user scrolls
+let nav_Container = document.querySelector(".nav_Container");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 0) {
+    nav_Container.classList.add("nav_shadow");
+  } else {
+    nav_Container.classList.remove("nav_shadow");
+  }
+});
 
+// nav_Links.forEach((link) => {
+//   link.addEventListener("click", () => {
+//     // Remove the active class from all links
+//     nav_Links.forEach((nav) => nav.classList.remove("active"));
 
+//     // Add the active class to the clicked link
+//     link.classList.add("active");
+//   });
+// });
+let home_Element = document.getElementById("Home_El");
 
-    // nav_Links.forEach((link) => {
-    //   link.addEventListener("click", () => {
-    //     // Remove the active class from all links
-    //     nav_Links.forEach((nav) => nav.classList.remove("active"));
+const check_Active_Link = () => {
+  if (home_Element) {
+    // Add the 'active' class
+    home_Element.classList.add("yes");
+    console.log("Active class added:", home_Element);
+  } else {
+    home_Element.classList.remove("yes");
+  }
+};
+// Call the function
+check_Active_Link();
 
-    //     // Add the active class to the clicked link
-    //     link.classList.add("active");
-    //   });
-    // });
-    let home_Element = document.getElementById("Home_El");
-
-    const check_Active_Link = () => {
-      if (home_Element) {
-        // Add the 'active' class
-        home_Element.classList.add("yes");
-        console.log("Active class added:", home_Element);
-      } else {
-        home_Element.classList.remove("yes")
-      }
-    };
-    // Call the function
-    check_Active_Link();
-
-
-    // Articles Section
+// Articles Section
 let date_indicators = document.querySelectorAll(".date_indicator");
 
 // Function to update time for all elements
@@ -91,9 +87,7 @@ for (let i = 0; i < faq_indicator_Icon.length; i++) {
     faqS_answersAll[i].style.display = "block";
     faq_indicator_Icon[i].style.display = "none";
     faq_close_Icon[i].style.display = "block";
-  })
-  
-  
+  });
 }
 
 for (let i = 0; i < faq_close_Icon.length; i++) {
@@ -101,19 +95,18 @@ for (let i = 0; i < faq_close_Icon.length; i++) {
     faqS_answersAll[i].style.display = "none";
     faq_indicator_Icon[i].style.display = "block";
     faq_close_Icon[i].style.display = "none";
-  })
-  
+  });
 }
 
 let services_El = document.getElementById("services_El");
 
 services_El.addEventListener("click", () => {
   window.location.href = "services.html";
-   if (services_El) {
-     // Add the 'active' class
-     services_El.classList.add("yes");
-     console.log("Active class added:", services_El);
-   } else {
-     services_El.classList.remove("yes");
-   }
-})
+  if (services_El) {
+    // Add the 'active' class
+    services_El.classList.add("yes");
+    console.log("Active class added:", services_El);
+  } else {
+    services_El.classList.remove("yes");
+  }
+});
