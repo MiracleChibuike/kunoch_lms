@@ -131,11 +131,62 @@ justify-content: space-between;
   .services div{
     margin: 10px;
 }
-  .box1{
+.box0 img, .box2 img, .box3 img, .box4 img, .box5 img, .box6 img, .box7 img, .box8 img, .box8 img, .box9 img{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box_main_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .box0{
     /* border: 1px solid black; */
     background-color: lightblue;
     padding: 10px;
-   padding-left: 10px;
+    padding-left: 10px;
+    }
+    .box02{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box03{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box04{
+      display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+    .box05{
+      display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+    .box06{
+      display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+    .box07{
+      display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+    .box08{
+      display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+    .box09{
+      display: flex;
+  justify-content: center;
+  align-items: center;
     }
     .paragraph2{
         padding: 10px;
@@ -145,7 +196,6 @@ justify-content: space-between;
         background-color: lightblue;
         padding: 10px;
         padding-left: 10px;
-
     }
 
     .box3{
@@ -199,3 +249,105 @@ justify-content: space-between;
     padding:20px;
     padding-left: 10px;
    }
+   .layout{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    padding: 20px 35px;
+    width: 1343px;
+    height: 210px;
+    top: 2454px;
+    left: -1px;
+    gap: 0px;
+    opacity: 0px;
+    background: #1AA3BA;
+  }
+  .layout p{
+    color: white;
+    text-align: center;
+  }
+  .image1{
+    width: 100px;
+  }
+  .image2{
+    width: 100px;
+  }
+  .image3{
+    width: 100px;
+  }
+  .image4{
+    width: 100px;
+  }
+   .heading h2{
+    margin-left: 80px;
+   }
+   .heading{
+    margin-left: 15px;
+   }
+   .body{
+    margin-top: 50px;
+    display: flex;
+    padding: 20px 35px;
+    
+   }
+   .box1{
+    background: transparent;
+   }
+   .paragraph1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 60px;
+   }
+   
+   #news_letter{
+    padding: 20px 35px;
+    margin: 45px 0;
+    background: var(--primary);
+  }
+   .news_letter_containers{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .news_info{
+    color: var(--black-primary);
+  }
+  .news_letter_sub input{
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+    color: var(--black-primary);
+    background: var(--primary-white);
+   
+  }
+  .news_letter_sub button{
+    padding: 8px 12px;
+    background: var(--secondary);
+    color: var(--primary-white);
+    border: none;
+    border-top-left-radius: 10px;
+     position: relative;
+    left: -8px;
+  }
+  #footer_sect{
+    padding: 20px 35px;
+    margin: 20px 0 0 0;
+    background: var(--secondary);
+    color: var(--primary-white);
+  }
+  #footer_sect a{
+    color: var(--primary-white);
+    text-decoration: none;
+  }
+  .footer_container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .kunoch_edu h2{
+    margin: 10px 0;
+  }
+  .kunoch_contacts{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 45px;
+  }
+  
