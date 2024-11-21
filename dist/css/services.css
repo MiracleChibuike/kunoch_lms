@@ -249,52 +249,58 @@ justify-content: space-between;
     padding:20px;
     padding-left: 10px;
    }
-   @media screen and (min-width: 0) and (max-width: 750px) {
-    .services{display: block;}
-   }
-   @media screen and (min-width: 0) and (max-width: 750px) {
+   @media screen and (min-width: 0) and (max-width: 750px)  {
+    .services{display: block;
+    }
     .nav_ContentsAll {
       display: none;
     }
     .nav_menu {
-      display: block;}
+      display: block;
     }
-   .layout{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    padding: 20px 35px;
-    width: 1343px;
-    height: 210px;
-    top: 2454px;
-    left: -1px;
-    gap: 0px;
-    opacity: 0px;
+    #layout > .layouts_container {
+      display: block;
+    }
+    #layout > .layouts_container > div{
+      margin: 20px 0;
+    }
+    #body > .body_container{
+      display: block;
+    }
+    .box1{
+      display: block;
+      width: 100%;
+    }
+
+   }
+   
+
+   .layouts_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px 0; 
+    padding: 35px 35px;
     background: #1AA3BA;
+    color: var(--primary-white);
   }
-  .layout p{
+  /* .layout p{
     color: white;
     text-align: center;
+  } */
+  .layouts_container > div{
+    text-align: center;
   }
-  .image1{
+  .image1 img, .image2 img, .image3 img, .image4 img{
     width: 100px;
   }
-  .image2{
-    width: 100px;
-  }
-  .image3{
-    width: 100px;
-  }
-  .image4{
-    width: 100px;
-  }
+  
    .heading h2{
     margin-left: 80px;
    }
    .heading{
     margin-left: 15px;
    }
-   .body{
+   .body_container{
     margin-top: 50px;
     display: flex;
     padding: 20px 35px;
