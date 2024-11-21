@@ -106,3 +106,39 @@ for (let i = 0; i < faq_close_Icon.length; i++) {
   })
   
 }
+
+let about_us = document.querySelector(".about_us");
+
+about_us.addEventListener("click", () => {
+  window.location.href = "about_us.html";
+  if (about_us) {
+    about_us.add("yes");
+  } else {
+    about_us.remove("yes");
+  }
+})
+
+let nav_links = document.querySelector(".nav_ContentsAll");
+let menu = document.getElementById("menu_show");
+let cancel = document.getElementById("menu_hide");
+
+
+const show_Items = () => {
+    if (nav_links.style.display = "none") {
+        nav_links.style.display = "block";
+        menu.style.display ="none";
+        cancel.style.display ="block"
+      }
+};
+
+menu.addEventListener("click", show_Items);
+
+const close_Items = () => {
+    if (nav_links.style.display = "block") {
+        cancel.style.display = "none";
+        menu.style.display ="block";
+        nav_links.style.display ="none"
+      }
+};
+
+cancel.addEventListener("click", close_Items);
