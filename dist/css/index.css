@@ -568,6 +568,61 @@ text-decoration-skip-ink: none;
   position: relative;
   top: 1px;
 }
+
+/* News letetr Section */
+#news_letter{
+  padding: 20px 35px;
+  margin: 45px 0;
+  background: var(--primary);
+}
+.news_letter_containers{
+  display: flex;
+  justify-content: space-evenly;
+}
+.news_info{
+  color: var(--black-primary);
+}
+.news_letter_sub input{
+  padding: 8px 12px;
+  border: none;
+  outline: none;
+  color: var(--black-primary);
+  background: var(--primary-white);
+ 
+}
+.news_letter_sub button{
+  padding: 8px 12px;
+  background: var(--secondary);
+  color: var(--primary-white);
+  border: none;
+  border-top-left-radius: 10px;
+   position: relative;
+  left: -8px;
+}
+
+#footer_sect{
+  padding: 20px 35px;
+  margin: 20px 0 0 0;
+  background: var(--secondary);
+  color: var(--primary-white);
+}
+#footer_sect a{
+  color: var(--primary-white);
+  text-decoration: none;
+}
+.footer_container{
+  display: flex;
+  justify-content: space-between;
+}
+.kunoch_edu h2{
+  margin: 10px 0;
+}
+.kunoch_contacts{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 45px;
+}
+
 /* Media Querry for Mobiles */
 @media screen and (min-width: 0) and (max-width: 750px) {
   .nav_ContentsAll {
@@ -676,6 +731,21 @@ text-decoration-skip-ink: none;
 .faq_text{
   text-align: center;
   padding: 0 5px;
+}
+/* News_letter section */
+.news_letter_containers{
+  display: block;
+}
+.news_letter_containers > div {
+  margin: 40px 0;
+}
+/* Footer Section */
+.footer_container{
+  display: block;
+  text-align: center;
+}
+.kunoch_contacts{
+  display: block;
 }
 }
 
