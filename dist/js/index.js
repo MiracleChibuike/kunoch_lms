@@ -111,6 +111,8 @@ let contact = document.getElementById("Contact")
 contact.addEventListener("clickl", () => {
 window.location.href = "contact.html"
 })
+
+
 let services_El = document.getElementById("services_El");
 
 services_El.addEventListener("click", () => {
@@ -123,4 +125,3 @@ services_El.addEventListener("click", () => {
      services_El.classList.remove("yes");
    }
 })
-
