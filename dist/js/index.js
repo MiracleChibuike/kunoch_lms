@@ -33,17 +33,39 @@
     // });
     let home_Element = document.getElementById("Home_El");
 
-    const check_Active_Link = () => {
-      if (home_Element) {
-        // Add the 'active' class
-        home_Element.classList.add("yes");
-        console.log("Active class added:", home_Element);
-      } else {
-        home_Element.classList.remove("yes")
-      }
-    };
-    // Call the function
-    check_Active_Link();
+  // addBorder;
+const update_Active_Link = () => {
+  if (home_Element) {
+    home_Element.classList.add("yes");
+  }else{
+    home_Element.classList.remove("yes");
+  }
+}
+
+// update_Active_Link();
+
+
+// Select all navigation elements
+let all_navs_text = document.querySelectorAll(".navs_El");
+
+// Get the current page from the window location
+const currentPage = window.location.pathname.replace(/\/$/, ""); // Normalize path
+console.log("Current Page:", currentPage);
+
+all_navs_text.forEach((nav) => {
+  const navPage = nav.getAttribute("data-page"); // Get the page from the data attribute
+  console.log("Nav Page:", navPage);
+
+  if (navPage === currentPage) {
+    // Add the 'yes' class to the active navigation element
+    nav.classList.add("yes");
+  } else {
+    // Remove the 'yes' class from non-active navigation elements
+    nav.classList.remove("yes");
+  }
+});
+
+
 
 
     // Articles Section
@@ -106,22 +128,23 @@ for (let i = 0; i < faq_close_Icon.length; i++) {
 }
 
 
-let contact = document.getElementById("Contact")
-
-contact.addEventListener("clickl", () => {
-window.location.href = "contact.html"
-})
-
-
 let services_El = document.getElementById("services_El");
 
-services_El.addEventListener("click", () => {
-  window.location.href = "services.html";
-   if (services_El) {
-     // Add the 'active' class
-     services_El.classList.add("yes");
-     console.log("Active class added:", services_El);
-   } else {
-     services_El.classList.remove("yes");
-   }
-});
+const load_services_page = (e) => {
+  window.location.href = "Services.html";
+}
+
+let about_El = document.getElementById("about_EL");
+
+const about_Page = (e) => {
+   window.location.href = "About_Us.html";
+}
+
+let contact_El = document.getElementById("Contact");
+
+
+const load_contact_page = (e) => {
+  window.location.href = "Contacts.html"
+}
+
+// console.log(about_El)

@@ -24,6 +24,13 @@
       background: var(--secondary);
       transition: .4s;
   }
+
+  /* Active style */
+  .yes{
+    color: var(--secondary);
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+}
 .nav_Container {
   display: flex;
   justify-content: space-between;

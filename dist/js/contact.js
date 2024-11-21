@@ -29,7 +29,10 @@ window.addEventListener("scroll", () => {
 //   });
 // });
 let home_Element = document.getElementById("Home_El");
- 
+
+const load_Home_page = (e) => {
+  window.location.href = "Index.html"
+} 
 
 // addBorder;
 const update_Active_Link = () => {
@@ -41,28 +44,6 @@ const update_Active_Link = () => {
 };
 
 // update_Active_Link();
-
-const load_Home_page = () => {
-    window.location.href = "Index.html"
-};
-
-// home_Element.addEventListener("click", (e) => {
-//     load_Home_page()
-// })
-
-// let services_El = document.getElementById("services_El");
-
-// services_El.addEventListener("click", (e) => {
-//   window.location.href = "Services.html";
-// });
-
-const check = () => {
-    if (services_El) {
-        services_El.classList.add("yes")
-    } else{
-        services_El.classList.remove("yes")
-    }
-}
 
 let services_El = document.getElementById("services_El");
 
@@ -81,6 +62,3 @@ let contact_El = document.getElementById("Contact");
 const load_contact_page = (e) => {
   window.location.href = "Contacts.html";
 };
-// contact_El.addEventListener("click", (e) => {
-//   load_contact_page();
-// });
