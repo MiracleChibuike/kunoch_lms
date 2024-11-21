@@ -39,12 +39,14 @@
         home_Element.classList.add("yes");
         console.log("Active class added:", home_Element);
       } else {
-        console.error("Element with ID 'Home_El' not found in the DOM");
+        home_Element.classList.remove("yes")
       }
     };
-
     // Call the function
     check_Active_Link();
+
+
+    // Load Services Page
 
 
 
@@ -106,3 +108,5 @@ for (let i = 0; i < faq_close_Icon.length; i++) {
   })
   
 }
+
+// Load services Page
