@@ -199,3 +199,13 @@ justify-content: space-between;
     padding:20px;
     padding-left: 10px;
    }
+   @media screen and (min-width: 0) and (max-width: 750px) {
+    .services{display: block;}
+   }
+   @media screen and (min-width: 0) and (max-width: 750px) {
+    .nav_ContentsAll {
+      display: none;
+    }
+    .nav_menu {
+      display: block;}
+    }
