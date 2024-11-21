@@ -46,6 +46,7 @@
     // Call the function
     check_Active_Link();
 
+// load services page
 
 
     // Articles Section
@@ -106,3 +107,5 @@ for (let i = 0; i < faq_close_Icon.length; i++) {
   })
   
 }
+
+
