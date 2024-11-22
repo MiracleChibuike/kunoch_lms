@@ -127,12 +127,11 @@ for (let i = 0; i < faq_close_Icon.length; i++) {
   
 }
 
+ HEAD
+ HEAD
+let about_us = document.querySelector(".about_us");
 
-let services_El = document.getElementById("services_El");
 
-const load_services_page = (e) => {
-  window.location.href = "Services.html";
-}
 
 let about_El = document.getElementById("about_EL");
 
@@ -147,4 +146,32 @@ const load_contact_page = (e) => {
   window.location.href = "Contacts.html"
 }
 
+ HEAD
+menu.addEventListener("click", show_Items);
+
+const close_Items = () => {
+    if (nav_links.style.display = "block") {
+        cancel.style.display = "none";
+        menu.style.display ="block";
+        nav_links.style.display ="none"
+      }
+};
+
+cancel.addEventListener("click", close_Items);
+
+let services_El = document.getElementById("services_El");
+
+services_El.addEventListener("click", () => {
+  window.location.href = "services.html";
+   if (services_El) {
+     // Add the 'active' class
+     services_El.classList.add("yes");
+     console.log("Active class added:", services_El);
+   } else {
+     services_El.classList.remove("yes");
+   }
+})
+
+
 // console.log(about_El)
+
