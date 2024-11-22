@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +13,13 @@
         @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Cabin+Condensed&family=Dancing+Script&family=Jost&family=Kalam&family=Kanit&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+Display:wght@600&family=Odibee+Sans&family=PT+Sans+Narrow&family=Sansita+Swashed:wght@300..900&family=Signika+Negative:wght@300..700&family=Slabo+27px&family=Syne:wght@400..800&family=Ubuntu:wght@500&family=Yesteryear&display=swap');
     </style>
     <!-- Default CSS Link -->
-     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    
+
     <!-- Main Container -->
-     <div class="parentContainer">
+    <div class="parentContainer">
         <div class="parent_Hero">
             <!-- Nav Container -->
             <div class="nav_Container">
@@ -31,14 +33,14 @@
                 <div class="nav_ContentsAll">
                     <div class="nav_links">
                         <ul>
-                            <li class="navs_El" id="Home_El">Home</li>
-                            <li class="navs_El">Services</li>
-                            <li class="navs_El">About Us</li>
-                            <li class="navs_El">Contact Us</li>
+                            <li class="navs_El"   data-page="/Index.html"  id="Home_El" onclick="load_Home_page()">Home</li>
+                            <li class="navs_El"  data-page="/Services.html" id="services_El" onclick="load_services_page()">Services</li>
+                            <li class="navs_El"  data-page="/About_Us.html" id="about_EL" onclick="about_Page()">About Us</li>
+                            <li class="navs_El"  data-page="/Contacts.html" id="Contact" onclick="load_contact_page()">Contact Us</li>
                         </ul>
                     </div>
                     <div class="logIns">
-                       <button id="log_in">Log In</button>
+                        <button id="log_in">Log In</button>
                     </div>
                 </div>
             </div>
@@ -49,14 +51,15 @@
                         <p class="insight">Gain new Skills,</p>
                         <h3><strong>Change your life</strong></h3>
                         <p>
-                            At Kunoch, we are dedicated to changing the lives of our students by  teaching them high value soft
+                            At Kunoch, we are dedicated to changing the lives of our students by teaching them high
+                            value soft
                             skills that
                             translates into millions.
                         </p>
-                       <div class="course_buttons">
-                        <button id="get_started_btn">Get Started</button>
-                        <button id="locate_courses">Find Courses</button>
-                       </div>
+                        <div class="course_buttons">
+                            <button id="get_started_btn">Get Started</button>
+                            <button id="locate_courses">Find Courses</button>
+                        </div>
                     </div>
                     <div class="hero_Img">
                         <img src="images/home_images/hero_image.png" id="hero_Image" alt="">
@@ -73,10 +76,11 @@
                         <img src="images/courses_images/web_dev_course.png" id="web_Dev_Img" alt="">
                         <div class="course_desc">
                             <p class="course_title"><strong>
-                                FrontEnd Development
-                            </strong></p>
+                                    FrontEnd Development
+                                </strong></p>
                             <p>
-                                Master essential skills in HTML, CSS, and  JavaScript including React to bring your ideas  to life and create visually stunning,
+                                Master essential skills in HTML, CSS, and JavaScript including React to bring your ideas
+                                to life and create visually stunning,
                                 user-friendly websites.
                             </p>
                         </div>
@@ -88,8 +92,9 @@
                         <div class="course_desc2">
                             <p class="course_title"><strong>Product Management</strong></p>
                             <p>
-                                Master the essentials of product management with this  comprehensive course designed to turn your
-                                ideas into  successful
+                                Master the essentials of product management with this comprehensive course designed to
+                                turn your
+                                ideas into successful
                                 products.
                             </p>
                         </div>
@@ -98,17 +103,18 @@
                 <div class="UI_Course">
                     <div class="UI_content">
                         <img src="images/courses_images/Ux_course.png" id="UI_course_Img" alt="">
-                       <div class="course_desc3">
-                        <p class="course_title"><strong>UI/UX Design</strong></p>
-                        <p>
-                            Unlock the art and science of user-centered  design with this UI/UX course, crafted to elevate  your digital
-                            product
-                            skills.
-                        </p>
-                       </div>
+                        <div class="course_desc3">
+                            <p class="course_title"><strong>UI/UX Design</strong></p>
+                            <p>
+                                Unlock the art and science of user-centered design with this UI/UX course, crafted to
+                                elevate your digital
+                                product
+                                skills.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                
+
             </div>
             <div class="navigate_right">
                 <img src="images/navigation_Icons/arrow_left.png" id="arrow_left" alt="">
@@ -117,7 +123,7 @@
         </section>
 
         <!-- Courses Outlines -->
-         <section id="Courses_Outlines">
+        <section id="Courses_Outlines">
             <div class="course_outlines_Container">
                 <div class="mobile_View">
                     <div class="mobile_contents">
@@ -153,9 +159,9 @@
                     </div>
                 </div>
             </div>
-         </section>
-         <!-- LMS Contents DIV -->
-          <section id="lms">
+        </section>
+        <!-- LMS Contents DIV -->
+        <section id="lms">
             <div class="lms_container">
                 <div class="lms_image">
                     <img src="images/courses_images/world_class.png" class="img_world_class" alt="">
@@ -168,12 +174,17 @@
                     <p>KunochDigi Learning Management System</p>
                     <h2 class="world_class_head">World Class Education At Your Convenience</h2>
                     <p class="world_class_info_texts">
-                        Introducing our advanced Learning Management System, designed  specifically for tech institutes! Empower students and
-                        instructors with a  personalized dashboard, real-time analytics, and a course catalog that’s  easy to navigate. Enhance
-                        learning through auto-graded coding  assignments, live virtual classrooms, and dedicated collaboration tools.  Access
-                        hands-on virtual labs, a rich resource library, and receive instant  updates and feedback. Boost student success with
-                        completion certificates, portfolio-building features, and a job board to connect with top tech  companies. Our LMS
-                        transforms tech education, making learning  streamlined, practical, and career-focused!
+                        Introducing our advanced Learning Management System, designed specifically for tech institutes!
+                        Empower students and
+                        instructors with a personalized dashboard, real-time analytics, and a course catalog that’s easy
+                        to navigate. Enhance
+                        learning through auto-graded coding assignments, live virtual classrooms, and dedicated
+                        collaboration tools. Access
+                        hands-on virtual labs, a rich resource library, and receive instant updates and feedback. Boost
+                        student success with
+                        completion certificates, portfolio-building features, and a job board to connect with top tech
+                        companies. Our LMS
+                        transforms tech education, making learning streamlined, practical, and career-focused!
                     </p>
                     <div class="world_class_more">
                         <div class="more">
@@ -181,269 +192,276 @@
                         </div>
                         <div class="more_2">
                             <img src="images/courses_images/world_class_indicator.png" id="indicator_long alt="">
-                            <img src="images/courses_images/indicator_dot.png" id="indicator_dot" alt="">
+                            <img src=" images/courses_images/indicator_dot.png" id="indicator_dot" alt="">
                             <img src="images/courses_images/world_class_indicator.png" id="indicator_long alt="">
-                            <img src="images/courses_images/indicator_dot.png" id="indicator_dot" alt="">
+                            <img src=" images/courses_images/indicator_dot.png" id="indicator_dot" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-          </section>
-          <!-- Vision Page -->
-           <section id="Our_Vision">
+        </section>
+        <!-- Vision Page -->
+        <section id="Our_Vision">
             <h2 class="vision_head">Our Vision</h2>
             <div class="vision_Text">
                 <p>
-                    At KunochDigi, we aim at empowering the next generation of innovators through hands-on, inclusive, and cutting-edge
-                    technology education. We inspire curiosity, foster creativity, and build essential skills to prepare students for
+                    At KunochDigi, we aim at empowering the next generation of innovators through hands-on, inclusive,
+                    and cutting-edge
+                    technology education. We inspire curiosity, foster creativity, and build essential skills to prepare
+                    students for
                     meaningful impact in a rapidly evolving digital world.
                 </p>
             </div>
-           </section>
+        </section>
 
-           <!-- Team Section -->
-            <section id="Teams">
-                <h2 class="team_Title">
-                    Meet Our Team
-                </h2>
-                <div class="team_Container">
-                    <!-- First Team -->
-                    <div class="team">
-                        <img src="images/team_Images/team_1.jpeg" alt="">
-                        <div class="team_contents">
-                           <p><strong>Mr. Ifeanyi</strong></p>
-                           <p>Operation Manager</p>
-                        </div>
-                    </div>
-                    <!-- Second Team -->
-                    <div class="team2">
-                        <img src="images/team_Images/team_2.jpeg" alt="">
-                        <div class="team_contents">
-                            <p><strong>Mrs. Onyekachi</strong></p>
-                            <p>Administration Officer</p>
-                        </div>
-                    </div>
-                    <!-- Third team -->
-                    <div class="team3">
-                        <img src="images/team_Images/team_1.jpeg" alt="">
-                        <div class="team_contents">
-                            <p><strong>Mr. Miracle</strong></p>
-                            <p>Web Dev. Instructor</p>
-                        </div>
-                    </div>
-                    <!-- Fourth Team -->
-                    <div class="team4">
-                        <img src="images/team_Images/team_3.jpeg" alt="">
-                        <div class="team_contents">
-                            <p><strong>Mrs. Vera</strong></p>
-                            <p>UI/UX Instructor</p>
-                        </div>
+        <!-- Team Section -->
+        <section id="Teams">
+            <h2 class="team_Title">
+                Meet Our Team
+            </h2>
+            <div class="team_Container">
+                <!-- First Team -->
+                <div class="team">
+                    <img src="images/team_Images/team_1.jpeg" alt="">
+                    <div class="team_contents">
+                        <p><strong>Mr. Ifeanyi</strong></p>
+                        <p>Operation Manager</p>
                     </div>
                 </div>
-                <div class="navigate_right">
-                    <img src="images/navigation_Icons/arrow_left.png" id="arrow_left" alt="">
-                    <img src="images/navigation_Icons/arrow_right.png" id="arrow_right" alt="">
+                <!-- Second Team -->
+                <div class="team2">
+                    <img src="images/team_Images/team_2.jpeg" alt="">
+                    <div class="team_contents">
+                        <p><strong>Mrs. Onyekachi</strong></p>
+                        <p>Administration Officer</p>
+                    </div>
                 </div>
-            </section>
+                <!-- Third team -->
+                <div class="team3">
+                    <img src="images/team_Images/team_1.jpeg" alt="">
+                    <div class="team_contents">
+                        <p><strong>Mr. Miracle</strong></p>
+                        <p>Web Dev. Instructor</p>
+                    </div>
+                </div>
+                <!-- Fourth Team -->
+                <div class="team4">
+                    <img src="images/team_Images/team_3.jpeg" alt="">
+                    <div class="team_contents">
+                        <p><strong>Mrs. Vera</strong></p>
+                        <p>UI/UX Instructor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="navigate_right">
+                <img src="images/navigation_Icons/arrow_left.png" id="arrow_left" alt="">
+                <img src="images/navigation_Icons/arrow_right.png" id="arrow_right" alt="">
+            </div>
+        </section>
 
-            <!-- Testimonials Section -->
-             <section id="Testimony">
-                <h2 class="testimony_head">Testimonials</h2>
-                <div class="testimony_container">
-                    <div class="testimony_main">
-                        <div class="testimony_img">
-                            <img src="images/testimonials/testimony_1.jpeg" alt="">
-                        </div>
-                        <div class="testimony_comment">
-                            <img src="images/navigation_Icons/quote.png" class="quote_img"  alt="">
-                            <img src="images/navigation_Icons/Stars.png" class="star_img" alt="">
+        <!-- Testimonials Section -->
+        <section id="Testimony">
+            <h2 class="testimony_head">Testimonials</h2>
+            <div class="testimony_container">
+                <div class="testimony_main">
+                    <div class="testimony_img">
+                        <img src="images/testimonials/testimony_1.jpeg" alt="">
+                    </div>
+                    <div class="testimony_comment">
+                        <img src="images/navigation_Icons/quote.png" class="quote_img" alt="">
+                        <img src="images/navigation_Icons/Stars.png" class="star_img" alt="">
 
-                            <p class="comments">
-                                As a student here, I've had an amazing  experience! I feel confident and excited about <br> my future in tech, thanks to the
-                                skills and  support I’ve gained here
-                            </p>
-                            <aside><strong>Ife Chinaza</strong>
+                        <p class="comments">
+                            As a student here, I've had an amazing experience! I feel confident and excited about <br>
+                            my future in tech, thanks to the
+                            skills and support I’ve gained here
+                        </p>
+                        <aside><strong>Ife Chinaza</strong>
                             <p>Web Developer - FrontEnd</p>
                             <img src="images/navigation_Icons/ic_outline-facebook.png" class="facebook_icon" alt="">
                             <img src="images/navigation_Icons/whatsapp.png" class="whatsapp" alt="">
-                            </aside>
-                        </div>
-                    </div>
-                    <div class="testimony_2">
-                            <div class="testimony_img">
-                                <img src="images/testimonials/testimony_2.jpeg" alt="">
-                            </div>
-                            <div class="testimony_comment">
-                                <img src="images/navigation_Icons/quote.png" class="quote_img" alt="">
-                                <img src="images/navigation_Icons/Stars.png" class="star_img" alt="">
-                            
-                                <p class="comments">
-                                    As a student here, I've had an amazing experience! I feel confident and excited about my future in tech, thanks
-                                    to the
-                                    skills and support I’ve gained here
-                                </p>
-                                <aside><strong>Ife Chinaza</strong>
-                                <p>UI/UX Designer</p>
-                                <img src="images/navigation_Icons/ic_outline-facebook.png" class="facebook_icon" alt="">
-                                <img src="images/navigation_Icons/whatsapp.png" class="whatsapp" alt="">
-                                </aside>
-                            </div>
+                        </aside>
                     </div>
                 </div>
-             </section>
-             <!-- Articles Section -->
-              <section id="Articles_Sect">
-                <h2 class="articles_head">
-                    Our New Articles
-                </h2>
-                <div class="articles_Container">
-                    <div class="article_main">
-                        <p><strong>Good Management Habits</strong></p>
-                        <img src="images/articles/Line 1.png" id="line" alt="">
-                        <div class="articles_author">
-                            <div class="article_date"><small class="date_indicator"></small></div>
-                            <div class="article_writer"><small>by Onyekachi Enyichi</small></div>
-                        </div>
-                        <img src="images/articles/article_main.png" alt="">
-                        <div class="read_more">
-                            <button>Read More</button>
-                        </div>
+                <div class="testimony_2">
+                    <div class="testimony_img">
+                        <img src="images/testimonials/testimony_2.jpeg" alt="">
                     </div>
-                    <div class="article_2">
-                        <p><strong>The 7 Principles of Design</strong></p>
-                        <img src="images/articles/Line 1.png" id="line" alt="">
-                        <div class="articles_author">
-                            <div class="article_date"><small class="date_indicator"></small></div>
-                            <div class="article_writer"><small>by Vera Nwachukwu</small></div>
-                        </div>
-                        <img src="images/articles/article_2.png" alt="">
-                        <div class="read_more">
-                            <button>Read More</button>
-                        </div>
-                    </div>
-                    <div class="article_3">
-                        <p><strong>Understanding Web Development</strong></p>
-                        <img src="images/articles/line_white.png" id="line" alt="">
-                        <div class="articles_author">
-                            <div class="article_date"><small class="date_indicator"></small></div>
-                            <div class="article_writer"><small>by Onyia Miracle</small></div>
-                        </div>
-                        <img src="images/articles/article_3.png" alt="">
-                        <div class="read_more">
-                            <button>Read More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="navigate_right">
-                    <img src="images/navigation_Icons/arrow_left.png" id="arrow_left" alt="">
-                    <img src="images/navigation_Icons/arrow_right.png" id="arrow_right" alt="">
-                </div>
-              </section>
-              <!-- FAQ's Section -->
-              <section id="Faqs">
-                <h2 class="faqs_head">
-                Frequently Asked Questions
-                </h2>
-                <div class="faqs_container">
-                    <div class="faq_main">
-                        <div class="faq_main_contents">
-                            <div class="faq_num"><p>1</p></div>
-                            <div class="faq_text"><p>What is the course duration?</p>
-                                <p class="faqs_answer">
-                                    Front-End course duration is 3 months and for UI/UX ......
-                                </p>
-                            </div>
-                            <div class="faq_more"><img src="images/faqs_icons/faq_plus.png" class="faq_plus" alt="">
-                               <button class="faq_minus"> <i class="fa-solid fa-minus"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="faq2">
-                        <div class="faq_main_contents">
-                            <div class="faq_num">
-                                <p>2</p>
-                            </div>
-                            <div class="faq_text">
-                                <p>What is the course duration?</p>
-                                <p class="faqs_answer">
-                                    Front-End course duration is 3 months and for UI/UX ......
-                                </p>
-                            </div>
-                            <div class="faq_more"><img src="images/faqs_icons/faq_plus.png" class="faq_plus" alt="">
-                               <button class="faq_minus"> <i class="fa-solid fa-minus faq_minus"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="faq3">
-                        <div class="faq_main_contents">
-                            <div class="faq_num">
-                                <p>3</p>
-                            </div>
-                            <div class="faq_text">
-                                <p>What is the course duration?</p>
-                                <p class="faqs_answer">
-                                    Front-End course duration is 3 months and for UI/UX ......
-                                </p>
-                            </div>
-                            <div class="faq_more"><img src="images/faqs_icons/faq_plus.png" class="faq_plus" alt="">
-                               <button class="faq_minus"> <i class="fa-solid fa-minus faq_minus"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="faq4">
-                        <div class="faq_main_contents">
-                            <div class="faq_num">
-                                <p>4</p>
-                            </div>
-                            <div class="faq_text">
-                                <p>What is the course duration?</p>
-                                <p class="faqs_answer">
-                                    Front-End course duration is 3 months and for UI/UX ......
-                                </p>
-                            </div>
-                            <div class="faq_more"><img src="images/faqs_icons/faq_plus.png" class="faq_plus" alt="">
-                               <button class="faq_minus"> <i class="fa-solid fa-minus faq_minus"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="faq5">
-                        <div class="faq_main_contents">
-                            <div class="faq_num">
-                                <p>5</p>
-                            </div>
-                            <div class="faq_text">
-                                <p>What is the course duration?</p>
-                                <p class="faqs_answer">
-                                    Front-End course duration is 3 months and for UI/UX ......
-                                </p>
-                            </div>
-                            <div class="faq_more"><img src="images/faqs_icons/faq_plus.png" class="faq_plus" alt="">
-                               <button class="faq_minus"> <i class="fa-solid fa-minus faq_minus"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="faq6">
-                        <div class="faq_main_contents">
-                            <div class="faq_num">
-                                <p>6</p>
-                            </div>
-                            <div class="faq_text">
-                                <p>What is the course duration?</p>
-                                <p class="faqs_answer">
-                                    Front-End course duration is 3 months and for UI/UX ......
-                                </p>
-                            </div>
-                            <div class="faq_more"><img src="images/faqs_icons/faq_plus.png" class="faq_plus" alt="">
-                               <button class="faq_minus"> <i class="fa-solid fa-minus faq_minus"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </section>
+                    <div class="testimony_comment">
+                        <img src="images/navigation_Icons/quote.png" class="quote_img" alt="">
+                        <img src="images/navigation_Icons/Stars.png" class="star_img" alt="">
 
-              <!-- Newsletter Section -->
-               <section id="news_letter">
-               <div class="news_letter_containers">
+                        <p class="comments">
+                            As a student here, I've had an amazing experience! I feel confident and excited about my
+                            future in tech, thanks
+                            to the
+                            skills and support I’ve gained here
+                        </p>
+                        <aside><strong>Ife Chinaza</strong>
+                            <p>UI/UX Designer</p>
+                            <img src="images/navigation_Icons/ic_outline-facebook.png" class="facebook_icon" alt="">
+                            <img src="images/navigation_Icons/whatsapp.png" class="whatsapp" alt="">
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Articles Section -->
+        <section id="Articles_Sect">
+            <h2 class="articles_head">
+                Our New Articles
+            </h2>
+            <div class="articles_Container">
+                <div class="article_main">
+                    <p><strong>Good Management Habits</strong></p>
+                    <img src="images/articles/Line 1.png" id="line" alt="">
+                    <div class="articles_author">
+                        <div class="article_date"><small class="date_indicator"></small></div>
+                        <div class="article_writer"><small>by Onyekachi Enyichi</small></div>
+                    </div>
+                    <img src="images/articles/article_main.png" alt="">
+                    <div class="read_more">
+                        <button>Read More</button>
+                    </div>
+                </div>
+                <div class="article_2">
+                    <p><strong>The 7 Principles of Design</strong></p>
+                    <img src="images/articles/Line 1.png" id="line" alt="">
+                    <div class="articles_author">
+                        <div class="article_date"><small class="date_indicator"></small></div>
+                        <div class="article_writer"><small>by Vera Nwachukwu</small></div>
+                    </div>
+                    <img src="images/articles/article_2.png" alt="">
+                    <div class="read_more">
+                        <button>Read More</button>
+                    </div>
+                </div>
+                <div class="article_3">
+                    <p><strong>Understanding Web Development</strong></p>
+                    <img src="images/articles/line_white.png" id="line" alt="">
+                    <div class="articles_author">
+                        <div class="article_date"><small class="date_indicator"></small></div>
+                        <div class="article_writer"><small>by Onyia Miracle</small></div>
+                    </div>
+                    <img src="images/articles/article_3.png" alt="">
+                    <div class="read_more">
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="navigate_right">
+                <img src="images/navigation_Icons/arrow_left.png" id="arrow_left" alt="">
+                <img src="images/navigation_Icons/arrow_right.png" id="arrow_right" alt="">
+            </div>
+        </section>
+        <!-- FAQ's Section -->
+        <section id="Faqs">
+            <h2 class="faqs_head">
+                Frequently Asked Questions
+            </h2>
+            <div class="faqs_container">
+                <div class="faq_main">
+                    <div class="faq_main_contents">
+                        <div class="faq_num">
+                            <p>1</p>
+                        </div>
+                        <div class="faq_text">
+                            <p>What is the course duration?</p>
+                            <p class="faqs_answer">
+                                Front-End course duration is 3 months and for UI/UX ......
+                            </p>
+                        </div>
+                        <div class="faq_more"><img src="images/faqs_icons/faq_plus.png" class="faq_plus" alt="">
+                            <button class="faq_minus"> <i class="fa-solid fa-minus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq2">
+                    <div class="faq_main_contents">
+                        <div class="faq_num">
+                            <p>2</p>
+                        </div>
+                        <div class="faq_text">
+                            <p>What is the course duration?</p>
+                            <p class="faqs_answer">
+                                Front-End course duration is 3 months and for UI/UX ......
+                            </p>
+                        </div>
+                        <div class="faq_more"><img src="images/faqs_icons/faq_plus.png" class="faq_plus" alt="">
+                            <button class="faq_minus"> <i class="fa-solid fa-minus faq_minus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq3">
+                    <div class="faq_main_contents">
+                        <div class="faq_num">
+                            <p>3</p>
+                        </div>
+                        <div class="faq_text">
+                            <p>What is the course duration?</p>
+                            <p class="faqs_answer">
+                                Front-End course duration is 3 months and for UI/UX ......
+                            </p>
+                        </div>
+                        <div class="faq_more"><img src="images/faqs_icons/faq_plus.png" class="faq_plus" alt="">
+                            <button class="faq_minus"> <i class="fa-solid fa-minus faq_minus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq4">
+                    <div class="faq_main_contents">
+                        <div class="faq_num">
+                            <p>4</p>
+                        </div>
+                        <div class="faq_text">
+                            <p>What is the course duration?</p>
+                            <p class="faqs_answer">
+                                Front-End course duration is 3 months and for UI/UX ......
+                            </p>
+                        </div>
+                        <div class="faq_more"><img src="images/faqs_icons/faq_plus.png" class="faq_plus" alt="">
+                            <button class="faq_minus"> <i class="fa-solid fa-minus faq_minus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq5">
+                    <div class="faq_main_contents">
+                        <div class="faq_num">
+                            <p>5</p>
+                        </div>
+                        <div class="faq_text">
+                            <p>What is the course duration?</p>
+                            <p class="faqs_answer">
+                                Front-End course duration is 3 months and for UI/UX ......
+                            </p>
+                        </div>
+                        <div class="faq_more"><img src="images/faqs_icons/faq_plus.png" class="faq_plus" alt="">
+                            <button class="faq_minus"> <i class="fa-solid fa-minus faq_minus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq6">
+                    <div class="faq_main_contents">
+                        <div class="faq_num">
+                            <p>6</p>
+                        </div>
+                        <div class="faq_text">
+                            <p>What is the course duration?</p>
+                            <p class="faqs_answer">
+                                Front-End course duration is 3 months and for UI/UX ......
+                            </p>
+                        </div>
+                        <div class="faq_more"><img src="images/faqs_icons/faq_plus.png" class="faq_plus" alt="">
+                            <button class="faq_minus"> <i class="fa-solid fa-minus faq_minus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section id="news_letter">
+            <div class="news_letter_containers">
                 <div class="news_info">
                     <h2 class="news_letter_head">
                         Subscribe to Our Newsletter
@@ -453,53 +471,53 @@
                     </p>
                 </div>
                 <div class="news_letter_sub">
-                  <form action="">
-                    <input type="email" placeholder="Email" required>
-                    <button type="submit">Subscribe</button>
-                  </form>
+                    <form action="">
+                        <input type="email" placeholder="Email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
                 </div>
-               </div>
-               
-               </section>
+            </div>
 
-               <!-- Footer Section -->
-                <section id="footer_sect">
-                    <div class="footer_container">
-                        <div class="kunoch_edu">
-                            <h2>Kunoch</h2>
-                            <aside>
-                                <p>
-                                    Changing the world one course at a time.
-                                </p>
-                                <p>©
-                                    Copyright 01 Inc.</p>
-                            </aside>
-                        </div>
-                        <div class="kunoch_contacts">
-                            <div class="footer_help">
-                                <p><strong>HELP</strong></p>
-                                <aside>
-                                    <p>Support</p>
-                                    <p>Info</p>
-                                    <p>Tutorials</p>
-                                </aside>
-                            </div>
-                            <div class="footer_contact">
-                                <p><strong>CONTACT US</strong></p>
-                                <aside>
-                                  <p><a href="mailto:kunochdigi@gmail.com">kunochdigi@gmail.com</a></p>
-                                  <p><a href="tel:+2347038459432">07038459432</a></p>
-                                </aside>
-                            </div>
-                            <!-- <div class="footer_up_to_date">
+        </section>
+
+        <!-- Footer Section -->
+        <section id="footer_sect">
+            <div class="footer_container">
+                <div class="kunoch_edu">
+                    <h2>Kunoch</h2>
+                    <aside>
+                        <p>
+                            Changing the world one course at a time.
+                        </p>
+                        <p>©
+                            Copyright 01 Inc.</p>
+                    </aside>
+                </div>
+                <div class="kunoch_contacts">
+                    <div class="footer_help">
+                        <p><strong>HELP</strong></p>
+                        <aside>
+                            <p>Support</p>
+                            <p>Info</p>
+                            <p>Tutorials</p>
+                        </aside>
+                    </div>
+                    <div class="footer_contact">
+                        <p><strong>CONTACT US</strong></p>
+                        <aside>
+                            <p><a href="mailto:kunochdigi@gmail.com">kunochdigi@gmail.com</a></p>
+                            <p><a href="tel:+2347038459432">07038459432</a></p>
+                        </aside>
+                    </div>
+                    <!-- <div class="footer_up_to_date">
                                 <p><strong>STAY UP TO DATE</strong></p>
                                 <p>Subscribe to our newsletter</p>
                                 <p><input type="email" placeholder="Email" required></p>
                             </div> -->
-                        </div>
-                    </div>
-                </section>
-     </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
 
 
@@ -508,8 +526,9 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-        <!-- FA CDN -->
-        <script src="https://kit.fontawesome.com/9b5c4c6b23.js" crossorigin="anonymous"></script>
-        <script src="js/index.js"></script>
+    <!-- FA CDN -->
+    <script src="https://kit.fontawesome.com/9b5c4c6b23.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
