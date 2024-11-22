@@ -263,6 +263,10 @@ justify-content: space-between;
     .nav_ContentsAll {
       display: none;
     }
+    .amount{
+        display: block;
+      }
+    
     .nav_menu {
       display: block;
     }
