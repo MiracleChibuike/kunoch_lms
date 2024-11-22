@@ -84,3 +84,32 @@ const load_contact_page = (e) => {
 // contact_El.addEventListener("click", (e) => {
 //   load_contact_page();
 // });
+
+let nav_links = document.querySelector(".nav_ContentsAll");
+let menu = document.getElementById("menu_show");
+let cancel = document.getElementById("menu_hide");
+
+// console.log(nav_links);
+// console.log(menu);
+// console.log(cancel);
+
+const show_Items = () => {
+    if (nav_links.style.display = "none") {
+        // console.log("true")
+        nav_links.style.display = "block";
+        menu.style.display ="none";
+        cancel.style.display ="block"
+      }
+};
+
+menu.addEventListener("click", show_Items);
+
+const close_Items = () => {
+    if (nav_links.style.display = "block") {
+        cancel.style.display = "none";
+        menu.style.display ="block";
+        nav_links.style.display ="none"
+      }
+};
+
+cancel.addEventListener("click", close_Items);

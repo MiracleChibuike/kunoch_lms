@@ -204,9 +204,22 @@
     .last_Parent{
         display: block;
     }
-     .nav_ContentsAll {
+    .nav_Container {
+      background: linear-gradient(rgba(228, 226, 226, 0.2), rgba(228, 226, 226, 0.4));
+  }
+  .nav_ContentsAll {
       display: none;
-    }
+      width: 100%;
+      border-radius: 30px;
+      margin: 10px;
+}
+.nav_links ul {
+  display: block;
+}
+.nav_links ul li {
+  display: block;
+  margin: 80px 0;
+}
     .nav_menu {
       display: block;
     }
