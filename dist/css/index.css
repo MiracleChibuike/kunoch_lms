@@ -84,8 +84,11 @@
     /* width: 100%; */
 
 }
-.toggle_navs{
+.shown{
   display: block;
+}
+.nav_ContentsAll.show {
+  display: none;
 }
 /* #menu_show{
   background: orange;
@@ -639,11 +642,35 @@ text-decoration-skip-ink: none;
     color: var(--primary-white);
     left: 0;
     right: 0;
-    height: 900px;
+      text-align: center;
+      width: 100%;
+      height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Enables scrolling if content overflows */
+    transition: height 0.3s ease;
   }
   .nav_menu {
     display: block;
   }
+  .nav_links ul {
+    display: block;
+}
+.nav_links ul li {
+    display: block;
+    padding: 40px 0;
+}
+.nav_links ul li:hover{
+  color: var(--primary);
+}
+.logIns{
+  margin: 20px 10px;
+  text-align: center;
+
+}
+#log_in{
+  background: var(--primary);
+  color: var(--black-primary);
+  width: 80%;
+}
   
   /* Home Section */
   #hero_Container{
