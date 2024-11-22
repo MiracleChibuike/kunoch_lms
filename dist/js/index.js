@@ -130,23 +130,26 @@ for (let i = 0; i < faq_close_Icon.length; i++) {
 // let about_us = document.querySelector(".about_us");
 
 
+// let about_us = document.querySelector(".about_us");
+
+
 
 let about_El = document.getElementById("about_EL");
 
-const about_Page = (e) => {
+const about_Page = () => {
    window.location.href = "About_Us.html";
 }
 
 let services_El = document.getElementById("services_El");
 
-const load_services_page = (e) => {
+const load_services_page = () => {
   window.location.href = "Services.html";
 };
 
 let contact_El = document.getElementById("Contact");
 
 
-const load_contact_page = (e) => {
+const load_contact_page = () => {
   window.location.href = "Contacts.html"
 }
 
