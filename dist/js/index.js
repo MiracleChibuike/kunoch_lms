@@ -137,6 +137,12 @@ const about_Page = (e) => {
    window.location.href = "About_Us.html";
 }
 
+let services_El = document.getElementById("services_El");
+
+const load_services_page = (e) => {
+  window.location.href = "Services.html";
+};
+
 let contact_El = document.getElementById("Contact");
 
 
