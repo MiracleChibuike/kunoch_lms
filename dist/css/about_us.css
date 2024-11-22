@@ -234,14 +234,21 @@
     column-gap: 45px;
   }  
 @media screen and (min-width:0) and (max-width:750px) {
+    .nav_Container {
+        background: linear-gradient(rgba(240, 250, 255, 0.4), rgba(240, 250, 255, 0.6));
+    }
     .nav_ContentsAll {
         display: none;
-        /* width: 100%;
-        top: 70px;
-        left: 0;
-        right: 0;
+        width: 100%;
         border-radius: 30px;
-        margin: 10px; */
+        margin: 10px;
+}
+.nav_links ul {
+    display: block;
+}
+.nav_links ul li {
+    display: block;
+    margin: 80px 0;
 }
   .nav_menu {
     display: block;
