@@ -84,6 +84,12 @@
     /* width: 100%; */
 
 }
+.toggle_navs{
+  display: block;
+}
+/* #menu_show{
+  background: orange;
+} */
 /* .nav_ContentsAll .nav_Links.active {
     color: var(--secondary);
     font-weight: bold;
@@ -627,6 +633,13 @@ text-decoration-skip-ink: none;
 @media screen and (min-width: 0) and (max-width: 750px) {
   .nav_ContentsAll {
     display: none;
+    position: absolute;
+    top: 65px;
+    background: var(--secondary);
+    color: var(--primary-white);
+    left: 0;
+    right: 0;
+    height: 900px;
   }
   .nav_menu {
     display: block;

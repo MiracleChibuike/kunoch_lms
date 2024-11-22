@@ -151,6 +151,24 @@ const load_contact_page = (e) => {
 }
 
 
+// Nav bar toggle
+let nav_Links = document.querySelector(".nav_ContentsAll");
+
+const menu_show = document.getElementById("menu_show");
+
+const hide_menu = document.getElementById("menu_hide");
+
+const show_Menu = () => {
+ if (nav_Links.style.display ="none") {
+    nav_Links.style.display = "block";
+    menu_show.style.display = "none";
+    hide_menu.style.display = "block"
+ }
+}
+
+console.log(nav_Links)
+// console.log(menu_show)
+
 
 
 // console.log(about_El)
