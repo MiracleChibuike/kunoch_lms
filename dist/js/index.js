@@ -39,13 +39,11 @@
         home_Element.classList.add("yes");
         console.log("Active class added:", home_Element);
       } else {
-        console.error("Element with ID 'Home_El' not found in the DOM");
+        home_Element.classList.remove("yes")
       }
     };
-
     // Call the function
     check_Active_Link();
-
 
 
     // Articles Section
@@ -107,6 +105,7 @@ for (let i = 0; i < faq_close_Icon.length; i++) {
   
 }
 
+<<<<<<< HEAD
 let about_us = document.querySelector(".about_us");
 
 about_us.addEventListener("click", () => {
@@ -142,3 +141,17 @@ const close_Items = () => {
 };
 
 cancel.addEventListener("click", close_Items);
+=======
+let services_El = document.getElementById("services_El");
+
+services_El.addEventListener("click", () => {
+  window.location.href = "services.html";
+   if (services_El) {
+     // Add the 'active' class
+     services_El.classList.add("yes");
+     console.log("Active class added:", services_El);
+   } else {
+     services_El.classList.remove("yes");
+   }
+})
+>>>>>>> 2d8448ebc7293c14805e4733e095e80bad6096b7
