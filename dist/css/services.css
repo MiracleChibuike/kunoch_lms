@@ -249,12 +249,24 @@ justify-content: space-between;
     padding:20px;
     padding-left: 10px;
    }
+
+     /* Active style */
+  .yes{
+    color: var(--secondary);
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+}
+
    @media screen and (min-width: 0) and (max-width: 750px)  {
     .services{display: block;
     }
     .nav_ContentsAll {
       display: none;
     }
+    .amount{
+        display: block;
+      }
+    
     .nav_menu {
       display: block;
     }

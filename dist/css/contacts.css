@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+:root {
+    --primary: #d1edf1;
+    --secondary: #1aa3ba;
+    --black-primary: #2b2b2b;
+    --primary-white: #ffffff;
+  }
+.parent{
+    /* background: var(--primary-white); */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 150px;
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: var(--primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--black-primary);
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--secondary);
+    transition: .4s;
+}
+/* Change the text selection background color */
+::selection {
+  background: var(--secondary); /* Custom background color */
+  color: var(--primary-white); /* Custom text color */
+}
+
+/* For Firefox */
+::-moz-selection {
+  background: var(--secondary); /* Custom background color */
+  color: var(--primary-white); /* Custom text color */
+}
+/* Styling for Parent Hero */
+.parent_Hero {
+  background: var(--primary);
+}
+.nav_Container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 35px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  background: var(--primary);
+}
+.nav_shadow{
+    box-shadow: 0 0 5px var(--black-primary);
+    transition: .4s ease-in-out;
+}
+.nav_menu {
+  display: none;
+}
+#menu_hide {
+  display: none;
+}
+.nav_ContentsAll {
+  display: flex;
+}
+.nav_links ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav_links ul li {
+  padding: 0 35px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.yes{
+    color: var(--secondary);
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+    /* width: 100%; */
+
+}
+/* .nav_ContentsAll .nav_Links.active {
+    color: var(--secondary);
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+    border: 2px solid var(--secondary);
+} */
+.nav_links ul li:hover {
+  color: var(--secondary);
+  font-weight: bold;
+  transition: color 0.4s ease-in-out;
+}
+
+.nav_links ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary);
+  transition: width 0.4s ease-in-out;
+}
+
+.nav_links ul li:hover::after {
+  width: 100%; /* Expands to match the text width */
+}
+#log_in {
+  background: var(--secondary);
+  color: var(--primary-white);
+  border: none;
+  border-radius: 4px;
+  padding: 5px 25px;
+}
+#log_in:hover {
+  transform: scale(1.1);
+  transition: 0.4s ease;
+}
+.parent h1{
+    font-size: 35px;
+    margin: 10px;
+}
+.parent p{
+    margin: 10px;
+    font-size: 15px;
+}
+.P{
+    position: relative;
+    right: 10px;
+    top: 10px;
+}
+#inp{
+    border-radius: 5px;
+    height: 50px;
+    width: 400px;
+}
+#textarea{
+    border-radius: 5px;
+    height: 150px;
+    width: 400px;
+}
+#bt{
+    margin: 30px 0;
+    height: 50px;
+    width: 400px;
+    color: white;
+    background: var(--secondary);
+    border: none;
+    border-radius: 5px;
+    
+}
+/* .contact_Container{
+    background: var(--secondary);
+    margin-bottom: 0;
+}
+.last_Parent{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    padding: 70px;
+    color: var(--primary-white);
+} */
+ #footer_sect{
+  padding: 20px 35px;
+  margin: 190px 0 0 0;
+  background: var(--secondary);
+  color: var(--primary-white);
+}
+#footer_sect a{
+  color: var(--primary-white);
+  text-decoration: none;
+}
+.footer_container{
+  display: flex;
+  justify-content: space-between;
+}
+.kunoch_edu h2{
+  margin: 10px 0;
+}
+.kunoch_contacts{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 45px;
+}
+
+  /* Active style */
+  .yes{
+    color: var(--secondary);
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+}
+
+@media screen and (min-width:0) and (max-width:750px) {
+    .last_Parent{
+        display: block;
+    }
+     .nav_ContentsAll {
+      display: none;
+    }
+    .nav_menu {
+      display: block;
+    }
+    /* Footer Section */
+.footer_container{
+  display: block;
+  text-align: center;
+}
+.kunoch_contacts{
+  display: block;
+}
+.footer_container > div, .footer_contact{
+  margin: 25px 0;
+}
+}

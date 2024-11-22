@@ -33,17 +33,39 @@
     // });
     let home_Element = document.getElementById("Home_El");
 
-    const check_Active_Link = () => {
-      if (home_Element) {
-        // Add the 'active' class
-        home_Element.classList.add("yes");
-        console.log("Active class added:", home_Element);
-      } else {
-        home_Element.classList.remove("yes")
-      }
-    };
-    // Call the function
-    check_Active_Link();
+  // addBorder;
+const update_Active_Link = () => {
+  if (home_Element) {
+    home_Element.classList.add("yes");
+  }else{
+    home_Element.classList.remove("yes");
+  }
+}
+
+// update_Active_Link();
+
+
+// Select all navigation elements
+let all_navs_text = document.querySelectorAll(".navs_El");
+
+// Get the current page from the window location
+const currentPage = window.location.pathname.replace(/\/$/, ""); // Normalize path
+console.log("Current Page:", currentPage);
+
+all_navs_text.forEach((nav) => {
+  const navPage = nav.getAttribute("data-page"); // Get the page from the data attribute
+  console.log("Nav Page:", navPage);
+
+  if (navPage === currentPage) {
+    // Add the 'yes' class to the active navigation element
+    nav.classList.add("yes");
+  } else {
+    // Remove the 'yes' class from non-active navigation elements
+    nav.classList.remove("yes");
+  }
+});
+
+
 
 
     // Articles Section
@@ -105,31 +127,26 @@ for (let i = 0; i < faq_close_Icon.length; i++) {
   
 }
 
-<<<<<<< HEAD
+ HEAD
+ HEAD
 let about_us = document.querySelector(".about_us");
 
-about_us.addEventListener("click", () => {
-  window.location.href = "about_us.html";
-  if (about_us) {
-    about_us.add("yes");
-  } else {
-    about_us.remove("yes");
-  }
-})
-
-let nav_links = document.querySelector(".nav_ContentsAll");
-let menu = document.getElementById("menu_show");
-let cancel = document.getElementById("menu_hide");
 
 
-const show_Items = () => {
-    if (nav_links.style.display = "none") {
-        nav_links.style.display = "block";
-        menu.style.display ="none";
-        cancel.style.display ="block"
-      }
-};
+let about_El = document.getElementById("about_EL");
 
+const about_Page = (e) => {
+   window.location.href = "About_Us.html";
+}
+
+let contact_El = document.getElementById("Contact");
+
+
+const load_contact_page = (e) => {
+  window.location.href = "Contacts.html"
+}
+
+ HEAD
 menu.addEventListener("click", show_Items);
 
 const close_Items = () => {
@@ -141,7 +158,7 @@ const close_Items = () => {
 };
 
 cancel.addEventListener("click", close_Items);
-=======
+
 let services_El = document.getElementById("services_El");
 
 services_El.addEventListener("click", () => {
@@ -154,4 +171,7 @@ services_El.addEventListener("click", () => {
      services_El.classList.remove("yes");
    }
 })
->>>>>>> 2d8448ebc7293c14805e4733e095e80bad6096b7
+
+
+// console.log(about_El)
+
