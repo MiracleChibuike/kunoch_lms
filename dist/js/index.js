@@ -154,6 +154,59 @@ const load_contact_page = () => {
 }
 
 
+// // Nav bar toggle
+// let nav_Links = document.querySelector(".nav_ContentsAll");
+
+// const menu_show = document.getElementById("menu_show");
+
+// const hide_menu = document.getElementById("menu_hide");
+
+// const show_Menu = () => {
+//  if (nav_Links.style.display ="none") {
+//     nav_Links.style.display = "block";
+//     menu_show.style.display = "none";
+//     hide_menu.style.display = "block"
+//  }
+// }
+
+// const hide_Contents_menu = () => {
+//   if ((nav_Links.style.display = "block")) {
+//     nav_Links.style.display = "none";
+//     menu_show.style.display = "block";
+//     hide_menu.style.display = "none";
+//   }
+// }
+
+// Nav bar toggle
+const nav_Links = document.querySelector(".nav_ContentsAll");
+const menu_show = document.getElementById("menu_show");
+const hide_menu = document.getElementById("menu_hide");
+
+const toggle_show = () => {
+  if (nav_Links.style.display = "none") {
+   nav_Links.style.display = "block";
+   menu_show.style.display = "none";
+   hide_menu.style.display = "block"
+  }else{
+    nav_Links.style.display = "block"
+  }
+}
+
+const toogle_hide = () => {
+  if (nav_Links.style.display = "block") {
+    nav_Links.style.display = "none";
+    menu_show.style.display = "block";
+    hide_menu.style.display = "none";
+  }
+}
+
+menu_show.addEventListener("click", toggle_show);
+hide_menu.addEventListener("click", toogle_hide);
+
+
+console.log(nav_Links)
+// console.log(menu_show)
+
 
 
 // console.log(about_El)
