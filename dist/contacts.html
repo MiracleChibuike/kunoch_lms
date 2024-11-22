@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Cabin+Condensed&family=Dancing+Script&family=Jost&family=Kalam&family=Kanit&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+Display:wght@600&family=Odibee+Sans&family=PT+Sans+Narrow&family=Sansita+Swashed:wght@300..900&family=Signika+Negative:wght@300..700&family=Slabo+27px&family=Syne:wght@400..800&family=Ubuntu:wght@500&family=Yesteryear&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/contacts.css">
+</head>
+
+<body>
+
+    <!-- Nav -->
+    <div class="nav_Container">
+        <div class="log">
+            <h2>Kunoch</h2>
+        </div>
+        <div class="nav_menu">
+            <i class="fa-solid fa-bars" id="menu_show"></i>
+            <i class="fa-solid fa-xmark" id="menu_hide"></i>
+        </div>
+        <div class="nav_ContentsAll">
+            <div class="nav_links">
+                <ul>
+                                            <li class="navs_El" data-page="/Index.html" id="Home_El" onclick="load_Home_page()">Home</li>
+                                            <li class="navs_El" data-page="/Services.html" id="services_El" onclick="load_services_page()">Services</li>
+                                            <li class="navs_El" data-page="/About_Us.html" id="about_EL" onclick="about_Page()">About Us</li>
+                                            <li class="navs_El" data-page="/Contacts.html" id="Contact" onclick="load_contact_page()">Contact Us</li>
+
+                </ul>
+            </div>
+            <div class="logIns">
+                <button id="log_in">Log In</button>
+            </div>
+        </div>
+    </div>
+    <div class="contacts_Section">
+        <div class="parent">
+            <h1>Contact Us</h1>
+            <p>Let's bring your Tech Idea to life</p>
+            <div>
+                <p class="P">Email</p>
+                <input type="text" id="inp" placeholder="">
+            </div>
+            <div>
+                <p class="P">Leave a message</p>
+                <textarea name="" id="textarea"></textarea>
+            </div>
+            <div>
+                <button id="bt">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <section id="footer_sect">
+        <div class="footer_container">
+            <div class="kunoch_edu">
+                <h2>Kunoch</h2>
+                <aside>
+                    <p>
+                        Changing the world one course at a time.
+                    </p>
+                    <p>©
+                        Copyright 01 Inc.</p>
+                </aside>
+            </div>
+            <div class="kunoch_contacts">
+                <div class="footer_help">
+                    <p><strong>HELP</strong></p>
+                    <aside>
+                        <p>Support</p>
+                        <p>Info</p>
+                        <p>Tutorials</p>
+                    </aside>
+                </div>
+                <div class="footer_contact">
+                    <p><strong>CONTACT US</strong></p>
+                    <aside>
+                        <p><a href="mailto:kunochdigi@gmail.com">kunochdigi@gmail.com</a></p>
+                        <p><a href="tel:+2347038459432">07038459432</a></p>
+                    </aside>
+                </div>
+                <!-- <div class="footer_up_to_date">
+                                    <p><strong>STAY UP TO DATE</strong></p>
+                                    <p>Subscribe to our newsletter</p>
+                                    <p><input type="email" placeholder="Email" required></p>
+                                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- FA CDN -->
+    <script src="https://kit.fontawesome.com/9b5c4c6b23.js" crossorigin="anonymous"></script>
+
+    <script src="js/contact.js"></script>
+</body>
+
+</html>
