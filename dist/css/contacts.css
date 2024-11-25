@@ -115,7 +115,7 @@
 .nav_links ul li:hover::after {
   width: 100%; /* Expands to match the text width */
 }
-#log_in {
+#log_in{
   background: var(--secondary);
   color: var(--primary-white);
   border: none;
@@ -204,14 +204,34 @@
     .last_Parent{
         display: block;
     }
+    .parent{
+      padding: 50px;
+      
+    }
     .nav_Container {
-      background: linear-gradient(rgba(228, 226, 226, 0.2), rgba(228, 226, 226, 0.4));
+      background: var(--primary);
   }
   .nav_ContentsAll {
       display: none;
       width: 100%;
       border-radius: 30px;
       margin: 10px;
+}
+.nav_links{
+  background: var(--secondary);
+  color: var(--primary);
+  text-align: center;
+  position: relative;
+  right: 50px;
+}
+#log_In{
+  height: 50px;
+  width: 120%;
+  align-content: center;
+  position: relative;
+  right: 85px;
+  background: var(--secondary);
+  border: none;
 }
 .nav_links ul {
   display: block;
