@@ -85,6 +85,36 @@ const load_contact_page = (e) => {
 //   load_contact_page();
 // });
 
+
+let nav_container = document.querySelector(".nav_ContentsAll");
+let menu_Display = document.getElementById("menu_show");
+let cancel_Icon = document.getElementById("menu_hide");
+
+console.log( nav_container);
+console.log( menu_Display);
+console.log( cancel_Icon);
+
+const show_Items = () => {
+    if (nav_container.style.display = "none"){
+        console.log("True")
+        nav_container.style.display = "block";
+        menu_Display.style.display = "none";
+        cancel_Icon.style.display = "block"
+    }
+};
+
+menu_Display.addEventListener("click", show_Items)
+
+const hide_Items = () => {
+    if (nav_container.style.display = "block"){
+        nav_container.style.display = "none";
+        cancel_Icon.style.display = "none"
+        menu_Display.style.display = "block"
+    }
+};
+
+cancel_Icon.addEventListener("click", hide_Items)
+
 let nav_links = document.querySelector(".nav_ContentsAll");
 let menu = document.getElementById("menu_show");
 let cancel = document.getElementById("menu_hide");
@@ -113,3 +143,4 @@ const close_Items = () => {
 };
 
 cancel.addEventListener("click", close_Items);
+
