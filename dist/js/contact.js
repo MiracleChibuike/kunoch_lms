@@ -91,3 +91,14 @@ const close_Items = () => {
 };
 
 cancel.addEventListener("click", close_Items);
+
+let loader = document.getElementById("header_loader");
+let parent_container = document.getElementById("all");
+
+const showloader = () => {
+    setTimeout(() => {
+        loader.style.display = "none";
+        parent_container.style.display = "block";
+    }, 5000)
+};
+showloader();
