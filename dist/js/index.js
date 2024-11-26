@@ -1,4 +1,16 @@
 
+// Loader Animation
+let parent_El = document.querySelector(".parentContainer");
+let loader_Container = document.getElementById("loader_home");
+
+const show_Loader = () => {
+  setTimeout(() => {
+    loader_Container.style.display = "none";
+    parent_El.style.display = "block"
+  }, 5000)
+};
+
+show_Loader()
 // Prevent Image dragging
 
     document.querySelectorAll("img").forEach((img) => {
