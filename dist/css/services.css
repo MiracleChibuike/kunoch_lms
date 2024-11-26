@@ -13,6 +13,21 @@
     --primary-white: #ffffff;
   }
 
+  ::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track{
+    background: var(--primary);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--black-primary);
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+      background: var(--secondary);
+      transition: .4s;
+  }
+
 .nav_Container {
     display: flex;
     justify-content: space-between;
@@ -36,6 +51,7 @@
   }
   .nav_ContentsAll {
     display: flex;
+    
   }
   .nav_links ul {
     display: flex;
@@ -265,9 +281,12 @@ justify-content: space-between;
   }
   .nav_ContentsAll {
       display: none;
-      width: 100%;
+
+        width: 100%;
       border-radius: 30px;
-      margin: 10px;
+      margin: 10px;  
+      
+    }
 }
 .nav_links ul {
   display: block;
@@ -276,6 +295,7 @@ justify-content: space-between;
   display: block;
   margin: 80px 0;
 }
+ 
     .amount{
         display: block;
       }
@@ -296,22 +316,15 @@ justify-content: space-between;
       display: block;
       width: 100%;
     }
-    .news_letter_containers{
+    .nav_links ul{
       display: block;
-    }
-    .news_letter_containers > div {
-      margin: 40px 0;
-    }
-    /* Footer Section */
-    .footer_container{
-      display: block;
-      text-align: center;
-    }
-    .kunoch_contacts{
-      display: block;
-    }
 
-   }
+    }
+.nav_links ul li{
+  display: block;
+  
+}
+   
    
 
    .layouts_container{
