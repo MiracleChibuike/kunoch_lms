@@ -33,6 +33,10 @@
     // });
     let home_Element = document.getElementById("Home_El");
 
+    const load_Home_page = () => {
+      window.location.href = "Index.html"
+    }
+
   // addBorder;
 const update_Active_Link = () => {
   if (home_Element) {
@@ -127,24 +131,93 @@ for (let i = 0; i < faq_close_Icon.length; i++) {
   
 }
 
+// let about_us = document.querySelector(".about_us");
 
-let services_El = document.getElementById("services_El");
 
-const load_services_page = (e) => {
-  window.location.href = "Services.html";
-}
+// let about_us = document.querySelector(".about_us");
+
+
 
 let about_El = document.getElementById("about_EL");
 
-const about_Page = (e) => {
+const about_Page = () => {
    window.location.href = "About_Us.html";
 }
+
+let services_El = document.getElementById("services_El");
+
+const load_services_page = () => {
+  window.location.href = "Services.html";
+};
 
 let contact_El = document.getElementById("Contact");
 
 
-const load_contact_page = (e) => {
+const load_contact_page = () => {
   window.location.href = "Contacts.html"
 }
 
+
+// // Nav bar toggle
+// let nav_Links = document.querySelector(".nav_ContentsAll");
+
+// const menu_show = document.getElementById("menu_show");
+
+// const hide_menu = document.getElementById("menu_hide");
+
+// const show_Menu = () => {
+//  if (nav_Links.style.display ="none") {
+//     nav_Links.style.display = "block";
+//     menu_show.style.display = "none";
+//     hide_menu.style.display = "block"
+//  }
+// }
+
+// const hide_Contents_menu = () => {
+//   if ((nav_Links.style.display = "block")) {
+//     nav_Links.style.display = "none";
+//     menu_show.style.display = "block";
+//     hide_menu.style.display = "none";
+//   }
+// }
+
+// Nav bar toggle
+// Select elements
+const nav_Links = document.querySelector(".nav_ContentsAll");
+const menu_show = document.getElementById("menu_show");
+const hide_menu = document.getElementById("menu_hide");
+
+// Toggle the menu on "menu_show" click
+menu_show.addEventListener("click", () => {
+  nav_Links.style.display = "block";
+  menu_show.style.display = "none";
+  hide_menu.style.display = "block"
+});
+
+// Toggle the menu on "hide_menu" click
+hide_menu.addEventListener("click", () => {
+  nav_Links.style.display = "none";
+  menu_show.style.display = "block";
+  hide_menu.style.display = "none";
+});
+
+
+// const toogle_hide = () => {
+//   if (nav_Links.style.display = "block") {
+//     nav_Links.style.display = "none";
+//     menu_show.style.display = "block";
+//     hide_menu.style.display = "none";
+//   }
+// }
+
+// menu_show.addEventListener("click", toggle_show);
+// hide_menu.addEventListener("click", toogle_hide);
+
+
+console.log(nav_Links)
+// console.log(menu_show)
+
+
+
 // console.log(about_El)
+

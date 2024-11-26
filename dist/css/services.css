@@ -109,7 +109,7 @@
   }
 
   .create{
-    background-image: url(https://media.istockphoto.com/id/1987435635/photo/business-man-woman-and-paperwork-with-discussion-for-deal-agreement-and-proposal-for-b2b.webp?a=1&b=1&s=612x612&w=0&k=20&c=ur0zMAKERm1aUXh27xLYzKAmrgucqsPISx5IdXHECMc=);
+    background-image: url(/kunoch_lms/dist/images/services_images/Rectangle\ 12.png);
   }
   .services{
     display: grid;
@@ -276,13 +276,30 @@ justify-content: space-between;
    @media screen and (min-width: 0) and (max-width: 750px)  {
     .services{display: block;
     }
-    .nav_ContentsAll {
+    .nav_Container {
+      background: linear-gradient(rgba(240, 250, 255, 0.4), rgba(240, 250, 255, 0.6));
+  }
+  .nav_ContentsAll {
       display: none;
+
         width: 100%;
       border-radius: 30px;
       margin: 10px;  
       
     }
+
+      width: 100%;
+      border-radius: 30px;
+      margin: 10px;
+}
+.nav_links ul {
+  display: block;
+}
+.nav_links ul li {
+  display: block;
+  margin: 80px 0;
+}
+ 
     .amount{
         display: block;
       }
@@ -345,8 +362,10 @@ justify-content: space-between;
     padding: 20px 35px;
     
    }
-   .box1{
+   .body_container img{
     background: transparent;
+    width: 100%;
+    
    }
    .paragraph1{
     margin-top: 20px;
