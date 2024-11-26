@@ -296,6 +296,20 @@ justify-content: space-between;
       display: block;
       width: 100%;
     }
+    .news_letter_containers{
+      display: block;
+    }
+    .news_letter_containers > div {
+      margin: 40px 0;
+    }
+    /* Footer Section */
+    .footer_container{
+      display: block;
+      text-align: center;
+    }
+    .kunoch_contacts{
+      display: block;
+    }
 
    }
    
