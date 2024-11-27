@@ -133,7 +133,7 @@ let faqS_answersAll = document.querySelectorAll(".faqs_answer");
 
 let faq_indicator_Icon = document.querySelectorAll(".faq_plus");
 
-let faq_close_Icon = document.querySelectorAll(".faq_minus");
+let faq_close_Icon = document.querySelectorAll(".faq_minus_icon");
 
 for (let i = 0; i < faq_indicator_Icon.length; i++) {
   faq_indicator_Icon[i].addEventListener("click", (index) => {
@@ -152,7 +152,9 @@ for (let i = 0; i < faq_close_Icon.length; i++) {
     faq_close_Icon[i].style.display = "none";
   })
   
-}
+};
+
+console.log(faq_close_Icon);
 
 // let about_us = document.querySelector(".about_us");
 
