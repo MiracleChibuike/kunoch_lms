@@ -17,7 +17,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: 150px;
+    top: 100px;
 }
 ::-webkit-scrollbar{
   width: 10px;
@@ -100,7 +100,6 @@
   font-weight: bold;
   transition: color 0.4s ease-in-out;
 }
-
 .nav_links ul li::after {
   content: "";
   position: absolute;
@@ -115,14 +114,14 @@
 .nav_links ul li:hover::after {
   width: 100%; /* Expands to match the text width */
 }
-#log_in{
+#log_nn{
   background: var(--secondary);
   color: var(--primary-white);
   border: none;
   border-radius: 4px;
   padding: 5px 25px;
 }
-#log_in:hover {
+#log_nn:hover {
   transform: scale(1.1);
   transition: 0.4s ease;
 }
@@ -139,37 +138,44 @@
     right: 10px;
     top: 10px;
 }
+.BT{
+  width: 100%;
+}
+.contacts_Section{
+  margin: 50px 0;
+  display: grid;
+  place-content: center;
+  
+}
 #inp{
     border-radius: 5px;
     height: 50px;
-    width: 400px;
+   padding: 40px 40px;
 }
 #textarea{
     border-radius: 5px;
     height: 150px;
-    width: 400px;
+    padding: 40px 40px;
 }
 #bt{
-    margin: 30px 0;
-    height: 50px;
-    width: 400px;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
     color: white;
     background: var(--secondary);
     border: none;
     border-radius: 5px;
     
 }
-/* .contact_Container{
+.contact_Container{
     background: var(--secondary);
-    margin-bottom: 0;
 }
 .last_Parent{
     display: flex;
     justify-content: space-between;
-    margin: 50px;
-    padding: 70px;
     color: var(--primary-white);
-} */
+    padding: 30px;
+}
  #footer_sect{
   padding: 20px 35px;
   margin: 190px 0 0 0;
@@ -201,7 +207,7 @@
 }
 
 @media screen and (min-width:0) and (max-width:750px) {
-    .last_Parent{
+    /* .last_Parent{
         display: block;
     }
     .parent{
@@ -216,6 +222,7 @@
       width: 100%;
       border-radius: 30px;
       margin: 10px;
+
 }
 .nav_links{
   background: var(--secondary);
@@ -223,15 +230,6 @@
   text-align: center;
   position: relative;
   right: 50px;
-}
-#log_In{
-  height: 50px;
-  width: 120%;
-  align-content: center;
-  position: relative;
-  right: 85px;
-  background: var(--secondary);
-  border: none;
 }
 .nav_links ul {
   display: block;
@@ -243,10 +241,137 @@
     .nav_menu {
       display: block;
     }
-    /* Footer Section */
+    Footer Section */
+    .nav_ContentsAll {
+      display: none;
+      position: absolute;
+      top: 65px;
+      background: var(--secondary);
+      color: var(--primary-white);
+      left: 0;
+      right: 0;
+        text-align: center;
+        /* width: 100%; */
+        height: 100vh; /* Full viewport height */
+      /* Enables scrolling if content overflows */
+        transition: all 0.4s ease;
+        animation: navbarAnimate 2s linear;
+    }
+      @keyframes navbarAnimate {
+          0%{
+              height: 0;
+          }
+          20%, 50%, 100%{
+              height: 100vh;
+              /* width: 100%; */
+          }
+      }
+    .nav_ContentsAll.active{
+      display: block;
+    }
+    /* .nav_ContentsAll.inactive{
+      display: none;
+    } */
+    .nav_menu {
+      display: block;
+    }
+    .nav_menu i{
+      /* color: var(--secondary); */
+      /* border: 1px solid var(--secondary); */
+      border-radius: 8px;
+      font-size: 20px;
+      padding: 7px;
+      cursor: pointer;
+    }
+    .nav_menu #menu_show.active{
+      display: none;
+    }
+    .nav_menu #menu_hide.active_menu{
+      display: block;
+    }
+    .nav_menu #menu_hide.inactive{
+      display: none;
+    }
+    .nav_menu #menu_show.inactive{
+      display: none;
+    }
+   .nav_ContentsAll_Secondary{
+    display: none;
+   }
+    .nav_links{
+      text-align: center;
+      width: 100%;
+    }
+    .nav_links ul {
+      flex-direction: column;
+      justify-content: center;
+  }
+  .nav_links ul li {
+      /* display: block; */
+      padding: 40px 0;
+  }
+  .nav_links ul li:hover{
+    color: var(--primary);
+  }
+  .logIns{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 50px;
+  }
+  #log_nn{
+    background: var(--primary);
+    color: var(--black-primary);
+    width: 80%;
+    padding: 15px;
+    margin: 0 20px;
+  }
+.parent{
+    display: block;
+  }
+#inp{
+  /* width: 150px; */
+
+  }
+#textarea{
+    /* width: 150px; */
+  }
+  #bt{
+    /* width: 150px; */
+  }
+  /* footeer section */
+.last_Parent{
+    display: block;
+    text-align: center;
+    
+  }
+  .contact_Container{
+    /* width: 150px; */
+  }
+  .Hh{
+    /* width: 100px; */
+    font-size: 10px;
+  }
+  .Pp{
+    /* width: 150px; */
+  }
+  .nav_Container{
+    /* width: 150px; */
+  }
 .footer_container{
   display: block;
   text-align: center;
+  
+}
+.kunochh{
+  margin: 10px;
+}
+.help{
+  margin: 10px;
+}
+.contact_us{
+  margin: 10px;
 }
 .kunoch_contacts{
   display: block;
