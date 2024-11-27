@@ -2,15 +2,26 @@
 // Loader Animation
 let parent_El = document.querySelector(".parentContainer");
 let loader_Container = document.getElementById("loader_home");
+let page_detective = document.querySelector(".page_sect");
 
 const show_Loader = () => {
-  setTimeout(() => {
-    loader_Container.style.display = "none";
-    parent_El.style.display = "block"
-  }, 5000)
+ if (!navigator.onLine) {
+      page_detective.style.display = block;
+      loader_Container.style.display = "none"
+ }else{
+    setTimeout(() => {
+      parent_El.style.display = "block";
+      loader_Container.style.display = "none";
+      page_detective.style.display = "none";
+    }, 5000);
+ }
 };
 
-show_Loader()
+console.log(!navigator.onLine)
+
+show_Loader();
+
+
 // Prevent Image dragging
 
     document.querySelectorAll("img").forEach((img) => {

@@ -16,19 +16,24 @@
 }
 
 /* CSS Loader */
-#loader_home{
+#loader_home, .page_sect{
   display: grid;
   place-content: center;
   align-items: center;
   min-height: 100vh;
   background: var(--black-primary);
 }
-/* #loader_home p{
+.page_sect{
+  display: none;
+  color: var(--primary-white);
+}
+#loader_home p{
   color: var(--primary-white);
   text-align: center;
   position: relative;
   left: -30px;
-} */
+  display: none;
+}
  .loader {
     animation: rotate 1s infinite;
     height: 50px;
