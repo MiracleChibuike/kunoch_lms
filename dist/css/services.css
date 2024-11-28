@@ -107,9 +107,15 @@
     transform: scale(1.1);
     transition: 0.4s ease;
   }
+  #img1{
+    width: 100%;
+  }
+
 
   .create{
-    background-image: url(/kunoch_lms/dist/images/services_images/Rectangle\ 12.png);
+    background: linear-gradient(rgb(200, 200, 200, 0.1), rgb(200, 200, 200, 0.1)), 
+    url(https://s3-alpha-sig.figma.com/img/d858/b608/431ee27310102c605bdb2d62dd5fce43?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kxqph0sQ44dL3KtL7gSwwJZeMcovcBEIG3FgBJdW3Qf0FL6bdQLhgiHAcGbzEnNLCjAeXd~iiQFR0J8DxnwlVEg2qsTvFPwNk01kh0aP7Q8xJDRM8AjP4SrR7b6wg~bKI2snqlMO2uAwXHwyv~Z9xYZn~~xHdXWMJznJsvc~HzTiz75w3H-9Dy2eRxidx~GBDZWYisWz1dp~jgj8NoaXK3mNJdc3Kg2pxha4EI8aqgIWMqU121ueHluiJ7md~QpaBW9Z03LXI6YYOi6cGKTSaRWqK8m9lvj0yqIlPd8DB1e1tXj6eQ-1vYAjoZW-49H1H~s797THp-KQSVRCCy9NeQ__);
+    padding: 100px 30px;
   }
   .services{
     display: grid;
