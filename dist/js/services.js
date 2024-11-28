@@ -86,34 +86,34 @@ const load_contact_page = (e) => {
 // });
 
 
-let nav_container = document.querySelector(".nav_ContentsAll");
-let menu_Display = document.getElementById("menu_show");
-let cancel_Icon = document.getElementById("menu_hide");
+// let nav_container = document.querySelector(".nav_ContentsAll");
+// let menu_Display = document.getElementById("menu_show");
+// let cancel_Icon = document.getElementById("menu_hide");
 
-console.log( nav_container);
-console.log( menu_Display);
-console.log( cancel_Icon);
+// console.log( nav_container);
+// console.log( menu_Display);
+// console.log( cancel_Icon);
 
-const show_Items = () => {
-    if (nav_container.style.display = "none"){
-        console.log("True")
-        nav_container.style.display = "block";
-        menu_Display.style.display = "none";
-        cancel_Icon.style.display = "block"
-    }
-};
+// const show_Items = () => {
+//     if (nav_container.style.display = "none"){
+//         console.log("True")
+//         nav_container.style.display = "block";
+//         menu_Display.style.display = "none";
+//         cancel_Icon.style.display = "block"
+//     }
+// };
 
-menu_Display.addEventListener("click", show_Items)
+// menu_Display.addEventListener("click", show_Items)
 
-const hide_Items = () => {
-    if (nav_container.style.display = "block"){
-        nav_container.style.display = "none";
-        cancel_Icon.style.display = "none"
-        menu_Display.style.display = "block"
-    }
-};
+// const hide_Items = () => {
+//     if (nav_container.style.display = "block"){
+//         nav_container.style.display = "none";
+//         cancel_Icon.style.display = "none"
+//         menu_Display.style.display = "block"
+//     }
+// };
 
-cancel_Icon.addEventListener("click", hide_Items)
+// cancel_Icon.addEventListener("click", hide_Items)
 
 let nav_links = document.querySelector(".nav_ContentsAll");
 let menu = document.getElementById("menu_show");
