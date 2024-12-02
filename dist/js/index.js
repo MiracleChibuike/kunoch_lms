@@ -6,7 +6,7 @@ let page_detective = document.querySelector(".page_sect");
 
 const show_Loader = () => {
  if (!navigator.onLine) {
-      page_detective.style.display = block;
+      page_detective.style.display = "block";
       loader_Container.style.display = "none"
  }else{
     setTimeout(() => {
