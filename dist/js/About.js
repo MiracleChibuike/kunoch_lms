@@ -93,3 +93,15 @@ const close_Items = () => {
 };
 
 cancel.addEventListener("click", close_Items);
+
+let all = document.querySelector(".about_us");
+let loader = document.getElementById("hloader");
+
+let show_loader = () => {
+  setTimeout(() => {
+    loader.style.display = "none";
+    all.style.display = "block";
+  }, 5000);
+};
+
+show_loader();

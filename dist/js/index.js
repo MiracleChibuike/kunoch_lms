@@ -1,4 +1,27 @@
 
+// Loader Animation
+let parent_El = document.querySelector(".parentContainer");
+let loader_Container = document.getElementById("loader_home");
+let page_detective = document.querySelector(".page_sect");
+
+const show_Loader = () => {
+ if (!navigator.onLine) {
+      page_detective.style.display = "block";
+      loader_Container.style.display = "none"
+ }else{
+    setTimeout(() => {
+      parent_El.style.display = "block";
+      loader_Container.style.display = "none";
+      page_detective.style.display = "none";
+    }, 5000);
+ }
+};
+
+console.log(!navigator.onLine)
+
+show_Loader();
+
+
 // Prevent Image dragging
 
     document.querySelectorAll("img").forEach((img) => {
@@ -110,7 +133,7 @@ let faqS_answersAll = document.querySelectorAll(".faqs_answer");
 
 let faq_indicator_Icon = document.querySelectorAll(".faq_plus");
 
-let faq_close_Icon = document.querySelectorAll(".faq_minus");
+let faq_close_Icon = document.querySelectorAll(".faq_minus_icon");
 
 for (let i = 0; i < faq_indicator_Icon.length; i++) {
   faq_indicator_Icon[i].addEventListener("click", (index) => {
@@ -129,7 +152,9 @@ for (let i = 0; i < faq_close_Icon.length; i++) {
     faq_close_Icon[i].style.display = "none";
   })
   
-}
+};
+
+console.log(faq_close_Icon);
 
 // let about_us = document.querySelector(".about_us");
 
