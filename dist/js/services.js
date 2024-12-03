@@ -1,4 +1,22 @@
+let main_loader = document.querySelector(".loader")
+let support = document.getElementById("center_load");
+let content_El = document.getElementById("content")
+
+
 //  Prevent Image dragging
+const showloader = () => {
+  setTimeout( () => {
+      support.style.display = "none";
+      content_El.style.display = "block";
+  main_loader.style.display = "none";
+  }, 3000)
+  // content.style.display = "block"
+
+};
+showloader();
+
+console.log(support);
+
 
 document.querySelectorAll("img").forEach((img) => {
   img.addEventListener("mousedown", function (event) {
@@ -85,6 +103,7 @@ const load_contact_page = (e) => {
 //   load_contact_page();
 // });
 
+<<<<<<< HEAD
 
 let nav_container = document.querySelector(".nav_ContentsAll");
 let menu_Display = document.getElementById("menu_show");
@@ -114,3 +133,34 @@ const hide_Items = () => {
 };
 
 cancel_Icon.addEventListener("click", hide_Items)
+=======
+let nav_links = document.querySelector(".nav_ContentsAll");
+let menu = document.getElementById("menu_show");
+let cancel = document.getElementById("menu_hide");
+
+// console.log(nav_links);
+// console.log(menu);
+// console.log(cancel);
+
+const show_Items = () => {
+    if (nav_links.style.display = "none") {
+        // console.log("true")
+        nav_links.style.display = "block";
+        menu.style.display ="none";
+        cancel.style.display ="block"
+      }
+};
+
+menu.addEventListener("click", show_Items);
+
+const close_Items = () => {
+    if (nav_links.style.display = "block") {
+        cancel.style.display = "none";
+        menu.style.display ="block";
+        nav_links.style.display ="none"
+      }
+};
+
+cancel.addEventListener("click", close_Items);
+>>>>>>> afbf3d37dd3182daad9ed850e5baa93e5255a6e2
+
